@@ -1,3 +1,3 @@
-# course-files-repo
+# Course Files Repo
 
 Repository for externally-hosted files.
