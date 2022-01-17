@@ -21,16 +21,16 @@ var CHAT = 'li.modtype_hsuforum'
 /* Replace tracking icons with custom images:*/
 $(document).ready(function() {
   // Progress Tracking: Admin Indication
-  $('img[src*="completion-auto-enabled"]').attr("src", "https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-incomplete.png");
+  $('img[src*="completion-auto-enabled"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-incomplete.png");
   // Progress Tracking: Incomplete
-  $('img[src*="completion-auto-n"]').attr("src", "https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-incomplete.png");
+  $('img[src*="completion-auto-n"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-incomplete.png");
   // Progress Tracking: Complete
-  $('img[src*="completion-auto-y"]').attr("src", "https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png");
+  $('img[src*="completion-auto-y"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-complete-pass.png");
   // Progress Tracking: Complete Pass
-  $('img[src*="completion-auto-pass"]').attr("src", "https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png");
+  $('img[src*="completion-auto-pass"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-complete-pass.png");
   // Progress Tracking: Complete Fail
-  $('img[src*="completion-auto-fail"]').attr("src", "https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-fail.png");
+  $('img[src*="completion-auto-fail"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-complete-fail.png");
 
   // Progress Tracking: Restriction Set
-  $('img[src*="lock"]').attr("src", "https://cdn-icons-png.flaticon.com/512/595/595759.png");
+  $('img[src*="lock"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-locked.png");
 });
