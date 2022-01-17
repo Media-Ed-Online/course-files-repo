@@ -57,6 +57,7 @@ $(this).ready(function(index) {
     };
   });
 });
+$('#region-main').find("body.snap-resource-card li.snap-resource.modtype_url, body.snap-resource-card, li.snap-resource.modtype_url").css("background-image", "url()");
 
 
 
