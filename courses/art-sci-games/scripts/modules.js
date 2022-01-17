@@ -35,7 +35,7 @@ $('ul.topics li').each(function() {
       // see linked stylesheet
     };
   });
-
+});
 
 
 
