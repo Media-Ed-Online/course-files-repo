@@ -57,7 +57,7 @@ $(this).ready(function(index) {
     };
   });
 });
-$('#region-main').find("body.snap-resource-card li.snap-resource.modtype_url, body.snap-resource-card, li.snap-resource.modtype_url").css("background-image", "url()");
+$('#region-main').find(".snap-resource, snap-resource-card snap-resource.modtype_url, .snap-resource-card, .snap-resource.modtype_url").css("background-image", "url()");
 
 
 
