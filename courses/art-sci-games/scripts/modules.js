@@ -34,3 +34,16 @@ $(document).ready(function() {
   // Progress Tracking: Restriction Set
   $('img[src*="lock"]').attr("src", "https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/images/comptrack/comptrack-locked.png");
 });
+
+
+
+
+
+/* -------------
+| LINKED FONTS |
+------------- */
+WebFont.load({
+  google: {
+      families: ['Fredoka+One']
+  }
+});
