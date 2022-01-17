@@ -22,7 +22,6 @@ $(this).ready(function(index) {
       $(this).find(".snap-header-card").css("display", "none");
       $(this).find("p.snap-resource-card-fadeout").remove();
       $(this).find(".snap-resource-card, .snap-resource.modtype_url").css("background-image", "url()");
-      $('img[src*="url"]').remove();
 
       //-- 2. move module title to new home
       let oldTitle = $(this).find(".snap-asset-link")
