@@ -21,7 +21,7 @@ $(this).ready(function(index) {
       $(this).find(".snap-assettype").css("height", "0px");
       $(this).find(".snap-header-card").css("display", "none");
       $(this).find("p.snap-resource-card-fadeout").remove();
-      $(this).find("body.snap-resource-card li.snap-resource.modtype_url, body.snap-resource-card, li.snap-resource.modtype_url").css("background-image", "url()");
+      $(this).find(".snap-resource-card, .snap-resource.modtype_url").css("background-image", "url()");
 
       //-- 2. move module title to new home
       let oldTitle = $(this).find(".snap-asset-link")
@@ -57,9 +57,6 @@ $(this).ready(function(index) {
     };
   });
 });
-$('#region-main').find(".snap-resource, snap-resource-card snap-resource.modtype_url, .snap-resource-card, .snap-resource.modtype_url").css("background-image", "url()");
-
-
 
 
 
