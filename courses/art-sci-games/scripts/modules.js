@@ -55,6 +55,15 @@ $(this).ready(function(index) {
   });
 });
 
+/* Visually Hide Items From Page View (linked through URL): */
+$(this).ready(function(index) {
+  $(BOOK).add(H5P).each(function() {
+    if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
+      $(this).hide();
+    };
+  });
+});
+
 
 
 
