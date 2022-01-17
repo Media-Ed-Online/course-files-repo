@@ -6,3 +6,19 @@ li.modtype_url .snap-header-card,
 li.modtype_url .snap-resource-card-fadeout {
   display: none;
 }
+
+li.modtyle_url .snap-assettype {
+  height: 0px;
+}
+
+body.snap-resource-card li.snap-resource.modtype_url {
+  background-image: none !important;
+  border-top: 0;
+  border: 2px solid #f1f1f1;
+  height: auto !important;
+  background-image: none;
+  border-radius: 10px;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
