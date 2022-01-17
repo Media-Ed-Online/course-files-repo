@@ -1,6 +1,6 @@
-/* -------------------
-| MODULES OVERWRITES |
-------------------- */
+/* ----------------------
+| MODULES JS OVERWRITES |
+---------------------- */
 
 /* Variables: */
 var URL = 'li.modtype_url'
