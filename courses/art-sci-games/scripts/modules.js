@@ -12,10 +12,10 @@ var CHAT = 'li.modtype_hsuforum'
 
 /* Create URL+BOOK+H5P Module Group: */
 $('ul.topics li').each(function() {
- 
+
   // Move URL title:
   $(this).find(URL).each(function(index) {
-    if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Walkthrough")').length > 0) {
+    if ($(this).find('h3.snap-asset-link:contains("Information"),h3.snap-asset-link:contains("Walkthrough"),h3.snap-asset-link:contains("Tutorial")').length > 0) {
 
       //-- 1. remove url overflow mask + other covers
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
