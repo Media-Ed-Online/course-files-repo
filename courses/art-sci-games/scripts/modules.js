@@ -51,7 +51,7 @@ $(this).ready(function(index) {
         // relocate all moved-targeted items to new location
         newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
       });
-    );
+    };
   });
 });
 
