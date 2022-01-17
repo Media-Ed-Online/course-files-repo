@@ -30,7 +30,7 @@ $(this).ready(function(index) {
       oldTitle.remove();
       newTitle.append(oldTitle);
 
-      //-- 3. move first set of module icons to new home
+      //-- 3a. move first set of module icons to new home
       var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
       var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
       // find the first of each, add empty class to mark
@@ -42,7 +42,7 @@ $(this).ready(function(index) {
       oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
       newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
 
-      //-- 3a. move next set of module icons to new home, repeat until finished
+      //-- 3b. move next set of module icons to new home, repeat until finished
       $(this).each(function() {
         let oldIcon_URL = $(this).parent().find("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
         let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
@@ -51,18 +51,14 @@ $(this).ready(function(index) {
         // relocate all moved-targeted items to new location
         newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
       });
+
+      //-- 4. visually hide modules in page view (linked through visible URL modules): */
+      $(BOOK).add(H5P).hide();
     };
   });
 });
 
-/* Visually Hide Items From Page View (linked through URL): */
-$(this).ready(function(index) {
-  $(BOOK).add(H5P).each(function() {
-    if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
-      $(this).hide();
-    };
-  });
-});
+
 
 
 
