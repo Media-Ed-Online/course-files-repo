@@ -23,4 +23,4 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-bottom: 1em !important;
 }
 
-* {background: orange;}
+body {background: orange !important;}
