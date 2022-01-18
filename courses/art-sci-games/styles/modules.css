@@ -30,18 +30,18 @@ li.snap-resource.modtype_url:nth-child(3n+3) {
 }
 
 /* update moved title: */
-body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link h3 {
+body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
   padding-right: 0 !important;
 }
 div.tile-title h3 {
   font-family: "Fredoka One";
-  font-size: 22px;
+  font-size: 20px;
   color: var(--text);;
   padding-right: 0px;
   margin: 0px;
   padding-right: 0;
 }
-div.tile-title h3::before,
-div.tile-title h3::after {
+div.tile-title p.instancename::before,
+div.tile-title p.instancename::after {
   display: none;
 }
