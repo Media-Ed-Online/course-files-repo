@@ -26,7 +26,7 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-bottom: 1em !important;
 }
 li.snap-resource.modtype_url:nth-child(3n+3) {
-  margin-right: 0 !important;
+  
 }
 
 /* update moved titles: */
@@ -50,9 +50,9 @@ div.tile-title p.instancename::after {
 /* update moved icons: */
 .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
 div.tile-completion img {
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 40px !important;
 }
 div.tile-completion img:first-of-type {
   transform: rotate(-15deg);
