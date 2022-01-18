@@ -33,7 +33,7 @@ li.snap-resource.modtype_url:nth-child(3n+3) {
 body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
   padding-right: 0 !important;
 }
-div.tile-title h3 {
+div.tile-title h3, div.tile-title p.instancename {
   font-family: "Fredoka One";
   font-size: 20px;
   color: var(--text);;
