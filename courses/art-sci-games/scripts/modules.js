@@ -52,6 +52,9 @@ $(this).ready(function(index) {
 
       //-- 4. visually hide modules in page view (linked through visible URL modules): */
       $(BOOK).add(H5P).hide();
+
+      //-- 5. additional styling
+      $(this).find("a.mod-link").find("img").remove()
     };
   });
 });
