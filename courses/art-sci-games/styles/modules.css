@@ -29,7 +29,7 @@ li.snap-resource.modtype_url:nth-child(3n+3) {
   margin-right: 0 !important;
 }
 
-/* update moved title: */
+/* update moved titles: */
 body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
   padding-right: 0 !important;
 }
@@ -44,4 +44,21 @@ div.tile-title h3 {
 div.tile-title p.instancename::before,
 div.tile-title p.instancename::after {
   display: none;
+}
+
+
+/* update moved icons: */
+.snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
+div.tile-completion img {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+div.tile-completion img:first-of-type {
+  transform: rotate(-15deg);
+  margin-top: 10px;
+}
+div.tile-completion img:last-of-type {
+  transform: rotate(15deg);
+  margin-top: 10px;
 }
