@@ -14,7 +14,7 @@ var CHAT = 'li.modtype_hsuforum'
 $(this).ready(function(index) {
   // Move URL title:
   $(this).find(URL).each(function(index) {
-    if ($(this).find('h3.snap-asset-link:contains("Information"),h3.snap-asset-link:contains("Walkthrough"),h3.snap-asset-link:contains("Tutorial"):not(:contains("locked")),h3.snap-asset-link:contains("Level")').length > 0) {
+    if ($(this).find('h3.snap-asset-link:contains("Information"),h3.snap-asset-link:contains("Walkthrough"),h3.snap-asset-link:contains("Tutorial"),h3.snap-asset-link:contains("Level")').length > 0) {
 
       //-- 1. remove url overflow mask + other covers
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
@@ -55,20 +55,6 @@ $(this).ready(function(index) {
 
       //-- 5. additional styling
       $(this).find("a.mod-link, h3.snap-asset-link").find("img").remove()
-    };
-    
-    if ($(this).find('h3.snap-asset-link:contains("locked")').length > 0) {
-      //-- 1. remove url overflow mask + other covers
-      $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-      $(this).find(".snap-assettype").css("height", "0px");
-      $(this).find(".snap-header-card").css("display", "none");
-
-      //-- 2. move module title to new home
-      let oldTitle = $(this).find(".snap-asset-link")
-      let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-      // save the title, remove it, and add to new location
-      oldTitle.remove();
-      newTitle.append(oldTitle);
     };
   });
 });
