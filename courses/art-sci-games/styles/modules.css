@@ -26,7 +26,7 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-bottom: 1em !important;
 }
 li.snap-resource.modtype_url:nth-child(3n+3) {
-  
+
 }
 
 /* update moved titles: */
@@ -55,10 +55,10 @@ div.tile-completion img {
   font-size: 40px !important;
 }
 div.tile-completion img:first-of-type {
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
   margin-top: 10px;
 }
 div.tile-completion img:last-of-type {
-  transform: rotate(15deg);
+  transform: rotate(-15deg);
   margin-top: 10px;
 }
