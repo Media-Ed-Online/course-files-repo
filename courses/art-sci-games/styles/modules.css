@@ -1,17 +1,20 @@
 /* -----------------------
 | MODULES CSS OVERWRITES |
 ----------------------- */
-/* alter block features */
+/* variables: */
+:root {
+ --text: #616988;
+}
+
+/* alter block features: */
 li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
 li.modtype_url .snap-resource-card-fadeout {
   display: none;
 }
-
 li.modtyle_url .snap-assettype {
   height: 0px;
 }
-
 body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none !important;
   border-top: 0;
@@ -22,7 +25,23 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
 }
-
 li.snap-resource.modtype_url:nth-child(3n+3) {
   margin-right: 0;
+}
+
+/* update moved title: */
+body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link h3 {
+  padding-right: 0 !important;
+}
+div.tile-title h3 {
+  font-family: "Fredoka One";
+  font-size: 22px;
+  color: var(--text);;
+  padding-right: 0px;
+  margin: 0px;
+  padding-right: 0;
+}
+div.tile-title h3::before,
+div.tile-title h3::after {
+  display: none;
 }
