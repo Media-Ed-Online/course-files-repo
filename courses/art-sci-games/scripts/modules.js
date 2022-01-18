@@ -54,7 +54,7 @@ $(this).ready(function(index) {
       $(BOOK).add(H5P).hide();
 
       //-- 5. additional styling
-      $(this).find("a.mod-link").find("img").remove()
+      $(this).find("a.mod-link, .snap-asset-link").find("img").remove()
     };
   });
 });
