@@ -59,10 +59,12 @@ $(this).ready(function(index) {
   });
 });
 
-$(this).find(URL).each(function(index) {
-  if ($('div.tile-title p:contains("locked")').length > 0) {
-    $(this).css("color", "orange")
-  };
+$(this).ready(function(index) {
+  $(this).find(URL).each(function(index) {
+    if ($(this).find('div.tile-title p:contains("locked")').length > 0) {
+      $(this).parent().css("background-color", "pink");
+    };
+  });
 });
 
 
