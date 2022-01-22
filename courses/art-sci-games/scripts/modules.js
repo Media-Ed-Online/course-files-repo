@@ -57,7 +57,7 @@ $(this).ready(function(index) {
       $(this).find("a.mod-link, h3.snap-asset-link").find("img").remove()
       if ($(this).find('.snap-asset-content .contentafterlink:contains("locked")').length > 0) {
         $(this).css("background-color", "#C0C0C0");
-        $(this).parentsUntil().find(".activityinstance").css("background-color","none")
+        $(this).parentsUntil(".activityinstance").css("background-color","none")
       };
     };
   });
