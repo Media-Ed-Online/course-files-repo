@@ -61,7 +61,7 @@ $(this).ready(function(index) {
 
 $(this).ready(function(index) {
   $(this).find(URL).each(function(index) {
-    if ($(this).find('div.tile-title p:contains("locked")').length > 0) {
+    if ($(this).find('.snap-asset-content .contentafterlink div.tile-title p:contains("locked")').length > 0) {
       $(this).parent().css("background-color", "pink");
     };
   });
