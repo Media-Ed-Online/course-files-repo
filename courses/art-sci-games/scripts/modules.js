@@ -60,7 +60,7 @@ $(this).ready(function(index) {
 });
 
 $(this).find(URL).each(function(index) {
-  if ($('.tile-title:contains("locked")').length > 0) {
+  if ($('div.tile-title:contains("locked")').length > 0) {
     $(this).css("background", "orange")
   };
 });
