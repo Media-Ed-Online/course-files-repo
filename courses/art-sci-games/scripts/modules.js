@@ -62,7 +62,7 @@ $(this).ready(function(index) {
 $(this).ready(function(index) {
   $(this).find(URL).each(function(index) {
     if ($(this).find('.snap-asset-content .contentafterlink div.tile-title p:contains("locked")').length > 0) {
-      $(this).css("background-color", "pink");
+      $("div").css("background-color", "pink");
     };
   });
 });
