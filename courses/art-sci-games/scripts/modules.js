@@ -29,26 +29,28 @@ $(this).ready(function(index) {
       newTitle.append(oldTitle);
 
       //-- 3a. move first set of module icons to new home
-      var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-      var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-      // find the first of each, add empty class to mark
-      let oldIcon_URL = $(this).first().find(oldIcon).addClass("moved")
-      let oldIcon_BOOK = $(this).parent().find(BOOK).first().addClass("moved").find(oldIcon)
-      let oldIcon_H5P = $(this).parent().find(H5P).first().addClass("moved").find(oldIcon)
-      let newIconLocation = $(this).first().addClass("moved").find(newIcon)
-      // save the icons, remove them, and add to new location
-      oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
-      newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
-
-      //-- 3b. move next set of module icons to new home, repeat until finished
-      $(this).each(function() {
-        let oldIcon_URL = $(this).parent().find("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
-        let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
-        let oldIcon_H5P = $(this).parent().find("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
-        let newIconLocation = $(this).parent().find("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
-        // relocate all moved-targeted items to new location
+      if ($(this).find('div.snap-asset-content div.contentafterlink:not(:contains("locked"))').length > 0) {
+        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+        // find the first of each, add empty class to mark
+        let oldIcon_URL = $(this).first().find(oldIcon).addClass("moved")
+        let oldIcon_BOOK = $(this).parent().find(BOOK).first().addClass("moved").find(oldIcon)
+        let oldIcon_H5P = $(this).parent().find(H5P).first().addClass("moved").find(oldIcon)
+        let newIconLocation = $(this).first().addClass("moved").find(newIcon)
+        // save the icons, remove them, and add to new location
+        oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
         newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
-      });
+
+        //-- 3b. move next set of module icons to new home, repeat until finished
+        $(this).each(function() {
+          let oldIcon_URL = $(this).parent().find("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
+          let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
+          let oldIcon_H5P = $(this).parent().find("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
+          let newIconLocation = $(this).parent().find("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
+          // relocate all moved-targeted items to new location
+          newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+        });
+      };
 
       //-- 4. visually hide modules in page view (linked through visible URL modules): */
       $(BOOK).add(H5P).hide();
