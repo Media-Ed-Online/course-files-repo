@@ -29,7 +29,7 @@ $(this).ready(function(index) {
       newTitle.append(oldTitle);
 
       //-- 3a. move first set of module icons to new home
-      if ($(this).parentsUntil("div.asset-wrapper").find('div.snap-asset-content div.contentafterlink div.tile-title:not(:contains("locked"))').length > 0) {
+      if ($(this).parentsUntil("div.asset-wrapper").find('div.snap-asset-content div.contentafterlink:contains("locked")').length > 0) {
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
         // find the first of each, add empty class to mark
