@@ -57,7 +57,7 @@ $(this).ready(function(index) {
 
       //-- 5. additional styling
       $(this).find("a.mod-link, h3.snap-asset-link").find("img").remove()
-      if ($(this).find('div.snap-asset-content div.contentafterlink div.tile-title:contains("locked")').length > 0) {
+      if ($(this).find('div.snap-asset-content div.contentafterlink:contains("locked")').length > 0) {
         $(this).css("background-color", "#D7E7EC");
         $(this).parentsUntil("div.asset-wrapper").find("div.activityinstance").css("background-color", "rgba(255,255,255,0)");
       };
