@@ -14,7 +14,7 @@ var CHAT = 'li.modtype_hsuforum'
 $(this).ready(function(index) {
   // Move URL title:
   $(this).find(URL).each(function(index) {
-    if ($(this).find('h3.snap-asset-link:contains("Information"),h3.snap-asset-link:contains("Walkthrough"),h3.snap-asset-link:contains("Tutorial"),h3.snap-asset-link:contains("Level"):not("Locked")').length > 0) {
+    if ($(this).find('h3.snap-asset-link:contains("Information"),h3.snap-asset-link:contains("Walkthrough"),h3.snap-asset-link:contains("Tutorial"),h3.snap-asset-link:contains("Level"):not(:contains("Locked"))').length > 0) {
 
       //-- 1. remove url overflow mask + other covers
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
