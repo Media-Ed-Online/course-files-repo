@@ -29,7 +29,7 @@ $(this).ready(function(index) {
       newTitle.append(oldTitle);
 
       //-- 3a. move first set of module icons to new home
-      if ($(this).parentsUntil("div.asset-wrapper").find('div.snap-asset-content div.contentafterlink:not(:contains("locked"))').length > 0) {
+      if ($(this).parentsUntil("div.asset-wrapper").find('div.snap-asset-content div.contentafterlink div.tile-title:not(:contains("locked"))').length > 0) {
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
         // find the first of each, add empty class to mark
@@ -57,7 +57,7 @@ $(this).ready(function(index) {
 
       //-- 5. additional styling
       $(this).find("a.mod-link, h3.snap-asset-link").find("img").remove()
-      if ($(this).find('div.snap-asset-content div.contentafterlink:contains("locked")').length > 0) {
+      if ($(this).find('div.snap-asset-content div.contentafterlink div.tile-title:contains("locked")').length > 0) {
         $(this).css("background-color", "#D7E7EC");
         $(this).parentsUntil("div.asset-wrapper").find("div.activityinstance").css("background-color", "rgba(255,255,255,0)");
       };
