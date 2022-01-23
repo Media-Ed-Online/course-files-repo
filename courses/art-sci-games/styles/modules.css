@@ -4,6 +4,7 @@
 /* variables: */
 :root {
  --text: #616988;
+ --text-light: #C0C0C0;
 }
 
 /* alter block features: */
@@ -25,9 +26,6 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
 }
-li.snap-resource.modtype_url:nth-child(3n+3) {
-
-}
 
 /* update moved titles: */
 body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
@@ -36,7 +34,7 @@ body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instan
 div.tile-title h3, div.tile-title p.instancename {
   font-family: "Fredoka One";
   font-size: 20px !important;
-  color: var(--text);;
+  color: var(--text);
   padding-right: 0px;
   margin: 0px;
   padding-right: 0;
@@ -60,6 +58,11 @@ div.tile-completion img:first-of-type {
 div.tile-completion img:last-of-type {
   transform: rotate(15deg);
   margin-top: 10px;
+}
+
+/* locked tiles: */
+.locked-tile {
+  color: var(--text-light);
 }
 
 /* animate tile hover */
