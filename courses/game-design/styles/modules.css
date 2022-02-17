@@ -76,6 +76,6 @@ body.snap-resource-card li.snap-resource.modtype_url.moved {
   transition: all 0.25s ease-out !important;
 }
 li.modtype_url.moved:nth-of-type(odd):hover {
-  transform: scale(1.05);
+  transform: scale(1.008);
   filter:drop-shadow(0 0 10px rgba(0,0,0,0.25));
 }
