@@ -74,6 +74,8 @@ div.tile-completion img:last-of-type {
 /* animate tile hover */
 body.snap-resource-card li.snap-resource.modtype_url.moved {
   transition: all 0.25s ease-out !important;
+}
+li.modtype_url.moved:nth-of-type(odd):hover {
   transform: scale(1.1);
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.11);
+  filter:drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
