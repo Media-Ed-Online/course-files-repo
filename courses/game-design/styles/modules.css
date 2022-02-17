@@ -30,7 +30,6 @@ body.snap-resource-card li.snap-resource.modtype_url {
 /* update moved titles: */
 body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
   padding-right: 0 !important;
-  font-size: 12px;
 }
 div.tile-title h3, div.tile-title p.instancename {
   font-family: "Fredoka One";
@@ -43,6 +42,12 @@ div.tile-title h3, div.tile-title p.instancename {
 div.tile-title p.instancename::before,
 div.tile-title p.instancename::after {
   display: none;
+}
+
+/* paragraph below titles: */
+div.tile-title+p {
+  font-size: 12px;
+  color: #FFF;
 }
 
 /* update moved icons: */
