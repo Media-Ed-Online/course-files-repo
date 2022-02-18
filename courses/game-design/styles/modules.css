@@ -78,6 +78,6 @@ body.snap-resource-card li.snap-resource.modtype_url.moved * {
 li.modtype_url.moved *:hover {
   transform: scale(1.008);
 }
-li.modtype_url.moved div.tile-completion img:first-of-type:hover {
+li.modtype_url.moved div.tile-completion img:hover {
   transform: scale(1.02) rotate(-15deg);
 }
