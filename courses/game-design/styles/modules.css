@@ -72,9 +72,12 @@ div.tile-completion img:last-of-type {
 }
 
 /* animate tile hover */
-body.snap-resource-card li.snap-resource.modtype_url.moved {
+body.snap-resource-card li.snap-resource.modtype_url.moved * {
   transition: all 0.25s ease-out !important;
 }
 li.modtype_url.moved *:hover {
   transform: scale(1.008);
+}
+li.modtype_url.moved div.tile-completion img:first-of-type:hover {
+  transform: scale(1.02) rotate(-15deg);
 }
