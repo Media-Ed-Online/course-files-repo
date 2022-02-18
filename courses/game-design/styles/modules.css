@@ -27,6 +27,12 @@ body.snap-resource-card li.snap-resource.modtype_url {
   margin-bottom: 1em !important;
 }
 
+/* background colors */
+.bg-pink {
+  background-color: #FC5A95;
+}
+
+
 /* update moved titles: */
 body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
   padding-right: 0 !important;
