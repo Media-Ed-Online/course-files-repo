@@ -81,3 +81,6 @@ li.modtype_url.moved *:hover {
 li.modtype_url.moved div.tile-completion img:first-of-type:hover {
   transform: scale(1.1) rotate(-30deg);
 }
+li.modtype_url.moved div.tile-completion img:nth-of-type(2):hover {
+  transform: scale(1.2) rotate(-5deg);
+}
