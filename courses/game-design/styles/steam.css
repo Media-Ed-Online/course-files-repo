@@ -1,0 +1,22 @@
+/* ---------------------------
+| STEAM EMBED CSS OVERWRITES |
+--------------------------- */
+/* responsive embed (https://codepen.io/torgaddon/pen/RBxWar): */
+.steam-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.steam-embed iframe,
+.steam-embed object,
+.steam-embed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
