@@ -10,7 +10,11 @@
  --text-light: #616988;
 }
 
-/* headings */
-div.tile-title h3, div.tile-title p.instancename {
+/* headings: */
+h2 {
   font-family: 'Shizuru', cursive;
+}
+/* hide activity navigation: */
+div.activity-navigation {
+  visibility: hidden;
 }
