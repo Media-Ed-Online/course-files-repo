@@ -1,0 +1,16 @@
+/* -----------------------
+| BOOKS CSS OVERWRITES |
+----------------------- */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+/* variables: */
+:root {
+ --text: #707070;
+ --text-light: #616988;
+}
+
+/* headings */
+div.tile-title h3, div.tile-title p.instancename {
+  font-family: 'Shizuru', cursive;
+}
