@@ -112,13 +112,13 @@
   line-height: 34px;
   border-radius: 5px;
   text-transform: unset;
-  background: var(--brand-green);
+  background: #81C208;
   cursor: pointer;
 }
 
 #widget .btn_addtocart .btn_addtocart_content:hover {
   color: #fff;
-  background: var(--brand-green-darker);
+  background: #679B06;
 }
 #widget .game_purchase_action_bg {
   background: transparent;
