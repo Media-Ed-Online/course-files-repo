@@ -2,7 +2,7 @@
 | BOOKS CSS OVERWRITES |
 ----------------------- */
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 /* variables: */
 :root {
@@ -11,8 +11,9 @@
 }
 
 /* headings: */
-h2 {
-  font-family: 'Shizuru', cursive;
+h1, h2 {
+  font-family: 'Fredoka One', cursive;
+  color: var(--text);
 }
 
 /* hide activity navigation: */
