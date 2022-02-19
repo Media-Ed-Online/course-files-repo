@@ -118,10 +118,10 @@
 
 #widget .btn_addtocart .btn_addtocart_content:hover {
   color: #fff;
-  background: #679B06;
+  background: #679B06 !important;
 }
 #widget .game_purchase_action_bg {
-  background: transparent;
+  background: tomato;
 }
 #wishlistwidget {
   font-family: "Motiva Sans", Sans-serif;
