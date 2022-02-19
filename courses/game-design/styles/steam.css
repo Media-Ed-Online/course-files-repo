@@ -1,7 +1,13 @@
 /* ---------------------------
 | STEAM EMBED CSS OVERWRITES |
 --------------------------- */
-/* responsive embed: (https://codepen.io/torgaddon/pen/RBxWar): */
+:root {
+   --brand-blue: #00C3FF;
+  --brand-green: #81C208;
+}
+
+/* responsive embed: */
+/* original: https://codepen.io/torgaddon/pen/RBxWar */
 .steam-embed {
   position: relative;
   padding-bottom: 56.25%;
@@ -22,9 +28,10 @@
 }
 
 /* re-style embed: */
+/* orginal: https://store.akamai.steamstatic.com/public/css/styles_widget.css?v=EdUe4UoNgES6&l=english */
 #widget {
   border: 1px solid #2d3139;
-  background-color: pink;
+  background-color: #282e39;
   /*width: 614px;*/
   height: 146px;
   padding: 10px 15px;
@@ -35,6 +42,7 @@
   background-position-x: 99%;
   background-position-y: 5px;
 }
+
 #widget h1.main_text {
   color: #fefefe;
   font-family: "Motiva Sans", Sans-serif;
@@ -44,6 +52,7 @@
   overflow: hidden;
   max-width: 425px;
 }
+
 #widget h1 em {
   font-weight: normal;
   font-style: normal;
@@ -51,6 +60,7 @@
   font-family: "Motiva Sans", Sans-serif;
   font-weight: 300;
 }
+
 #widget .desc {
   margin: 10px 10px 0 0;
   font-size: 13px;
@@ -59,16 +69,20 @@
   max-height: 96px;
   overflow: hidden;
 }
+
 #widget p.package_contents {
   color: #9e9e9e;
 }
+
 #widget p.package_contents b {
   font-weight: normal;
   color: #8bc53f;
 }
+
 #widget p.package_contents a {
   color: #b0aeac;
 }
+
 #widget .game_purchase_action_bg.coming_soon {
   padding: 5px 5px 5px 10px;
   color: #b8dc89;
@@ -77,12 +91,15 @@
   background: linear-gradient(60deg, #395021 5%, #283e18 95%);
   height: auto;
 }
+
 .discount_pct {
   color: #a4d007;
 }
+
 .discount_final_price {
   color: #acdbf5;
 }
+
 #widget .btn_addtocart .btn_addtocart_content {
   display: inline-block;
   height: 34px;
@@ -92,14 +109,12 @@
   text-align: center;
   padding: 0px 11px;
   line-height: 34px;
-  border-radius: 2px;
+  border-radius: 5px;
   text-transform: unset;
-  background: #75b022;
-  background: -webkit-linear-gradient(top, #6fa720 5%, #588a1b 95%);
-  background: linear-gradient(to bottom, #6fa720 5%, #588a1b 95%);
-  background: linear-gradient(to right, #6fa720 5%, #588a1b 95%);
+  background: var(--brand-green);
   cursor: pointer;
 }
+
 #widget .btn_addtocart .btn_addtocart_content:hover {
   color: #fff;
   background: #6aa621;
@@ -107,6 +122,7 @@
   background: linear-gradient(to bottom, #8ed629 5%, #6aa621 95%);
   background: linear-gradient(to right, #8ed629 5%, #6aa621 95%);
 }
+
 #widget .game_purchase_action .game_purchase_price,
 #widget .game_purchase_action .game_purchase_discount,
 #widget .game_purchase_action .btn_addtocart,
@@ -114,9 +130,11 @@
 #widget .game_purchase_action .game_purchase_action_bg .game_purchase_action .game_purchase_action_qty {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 #widget .game_purchase_action_bg {
   background: transparent;
 }
+
 #wishlistwidget {
   font-family: "Motiva Sans", Sans-serif;
   font-weight: 300;
