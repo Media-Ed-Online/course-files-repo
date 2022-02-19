@@ -33,7 +33,8 @@
 /* orginal: https://store.akamai.steamstatic.com/public/css/styles_widget.css?v=EdUe4UoNgES6&l=english */
 #widget {
   border: 1px solid var(--brand-green-darker);
-  background-color: var(--brand-green);
+  border-radius: 15px;
+  background-color: var(--brand-green) !important;
   background-image: url(/public/images/v6/steam_ico.png);
   background-repeat: no-repeat;
   background-position-x: 99%;
