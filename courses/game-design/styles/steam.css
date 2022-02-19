@@ -4,6 +4,7 @@
 :root {
   --brand-blue: #00C3FF;
   --brand-green: #81C208;
+  --brand-green-darker: #679B06;
   --brand-orange: #FF6A00;
 }
 
@@ -117,25 +118,13 @@
 
 #widget .btn_addtocart .btn_addtocart_content:hover {
   color: #fff;
-  background: #6aa621;
-  background: -webkit-linear-gradient(top, #8ed629 5%, #6aa621 95%);
-  background: linear-gradient(to bottom, #8ed629 5%, #6aa621 95%);
-  background: linear-gradient(to right, #8ed629 5%, #6aa621 95%);
+  background: var(--brand-green-darker);
 }
-
 #widget .game_purchase_action_bg {
   background: transparent;
 }
-
 #wishlistwidget {
   font-family: "Motiva Sans", Sans-serif;
   font-weight: 300;
-  /* light */
   background-color: #ffffff;
-  /*width: 614px;*/
-  min-height: 50px;
-  height: 100vh;
-  max-height: 146px;
-  position: relative;
-  margin: 0 auto;
 }
