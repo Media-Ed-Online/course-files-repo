@@ -12,11 +12,11 @@
 
 /* headings: */
 h1, h2, h3, .h5p-element {
-  font-family:  droid-sans, sans-serif; 
+  font-family:  droid-sans, sans-serif;
   color: var(--text);
 }
 h3 {
-  padding: 5px;
+  padding: 1rem;
   margin-left: -1rem;
   background-color: #343A40;
   color: #FFF;
