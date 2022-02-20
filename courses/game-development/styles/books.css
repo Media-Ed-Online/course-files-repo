@@ -17,7 +17,7 @@ h1, h2, h3, .h5p-element {
 }
 h3 {
   padding: 5px;
-  margin-left: -5px;
+  margin-left: -1rem;
   background-color: #343A40;
   color: #FFF;
 }
