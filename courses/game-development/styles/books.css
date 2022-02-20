@@ -11,9 +11,14 @@
 }
 
 /* headings: */
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Unica One', sans-serif;
   color: var(--text);
+}
+h3 {
+  padding: 5px 0;
+  background-color: #343A40;
+  color: #FFF;
 }
 
 /* hide activity navigation: */
