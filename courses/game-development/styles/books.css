@@ -2,7 +2,7 @@
 | BOOKS CSS OVERWRITES |
 ----------------------- */
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 /* variables: */
 :root {
@@ -12,7 +12,7 @@
 
 /* headings: */
 h1, h2 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Unica One', sans-serif;
   color: var(--text);
 }
 
