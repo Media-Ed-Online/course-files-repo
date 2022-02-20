@@ -11,7 +11,7 @@
 }
 
 /* headings: */
-h1, h2, h3, .h5p-element {
+h1, h2, h3 {
   font-family:  droid-sans, sans-serif;
   color: var(--text);
 }
