@@ -14,7 +14,7 @@ var CHAT = 'li.modtype_hsuforum'
 $(this).ready(function(index) {
   // Move URL title:
   $('nav#course-toc ol#chapters li').css("border-top", "1px solid #dee2e6");
-  $('nav#course-toc ol#chapters li:contains("Exercise"))').css({
+  $('nav#course-toc ol#chapters li:contains("Exercise")').css({
     "border-top": "none",
     "margin-left": "15px"
   });
