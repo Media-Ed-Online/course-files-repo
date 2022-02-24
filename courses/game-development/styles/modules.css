@@ -15,7 +15,7 @@
 nav#course-toc ol#chapters {
   list-style-type: none;
 }
-nav#course-toc ol#chapters li {
+nav#course-toc ol#chapters li:not(:nth-last-of-type(2n+1)) {
   border-bottom: 1px solid #dee2e6;
 }
 nav#course-toc ol#chapters li span.sectionnumber {
