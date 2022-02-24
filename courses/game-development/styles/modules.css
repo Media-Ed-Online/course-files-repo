@@ -12,7 +12,7 @@
 #page-mast * {
     font-family:  droid-sans, sans-serif;
 }
-nav#course-toc #toc-desktop-menu-heading {
+nav#course-toc h2 {
   background-color: #362f2d;
   color: #fff;
 }
