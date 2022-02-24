@@ -12,10 +12,6 @@
 #page-mast * {
     font-family:  droid-sans, sans-serif;
 }
-nav#course-toc h2 {
-  background-color: #362f2d;
-  color: #fff;
-}
 nav#course-toc ol#chapters {
   list-style-type: none;
 }
