@@ -15,7 +15,7 @@ $(document).ready(function() {
   //attaching the event listener
   $('#region-main').css("background", "green")
   $(window).on('hashchange', function() {
-    $('#region-main').css("background", "pink")
+    $('#region-main').css("background", "green")
   }).trigger('hashchange');
 });
 
