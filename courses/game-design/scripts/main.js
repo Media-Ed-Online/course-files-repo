@@ -14,7 +14,7 @@ var CHAT = 'li.modtype_hsuforum'
 $(document).ready(function() {
   //attaching the event listener
   $(window).on('hashchange', function() {
-    $('#page').css("background","pink")
+    $('#region-main').css("background","pink")
   });
 });
 
