@@ -11,7 +11,7 @@
 }
 
 /* table of contents: */
-#page-mast * {
+#page-mast h1 {
     font-family: "Fredoka One";
 }
 nav#course-toc ol#chapters {
