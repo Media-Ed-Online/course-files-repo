@@ -12,5 +12,11 @@ var CHAT = 'li.modtype_hsuforum'
 
 /* Modify URL+BOOK+H5P Module Group: */
 $(this).ready(function(index) {
-  
+
+});
+
+$(window).hashchange(function() {
+  var back = ["#ff0000", "blue", "gray"];
+  var rand = back[Math.floor(Math.random() * back.length)];
+  $('#page').css('background', rand);
 });
