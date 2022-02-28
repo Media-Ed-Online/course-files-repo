@@ -15,6 +15,6 @@ $(window).ready(function(index) {
   $('#region-main').css('background', 'green');
 });
 
-$(window).hashchange(function() {
+$(window).on('hashchange',function(){ 
   $('#region-main').css('background', 'pink');
 });
