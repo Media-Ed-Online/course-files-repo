@@ -16,5 +16,5 @@ $(window).ready(function(index) {
 });
 
 $(window).on('hashchange',function(){ 
-  $('#region-main').css('background', 'pink');
+    window.location.reload(true);
 });
