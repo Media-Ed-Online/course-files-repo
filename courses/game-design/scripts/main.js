@@ -12,9 +12,9 @@ var CHAT = 'li.modtype_hsuforum'
 
 /* Modify URL+BOOK+H5P Module Group: */
 $(window).ready(function(index) {
-  $('#page').css('background', 'green');
+  $('#region-main').css('background', 'green');
 });
 
 $(window).hashchange(function() {
-  $('#page').css('background', 'pink');
+  $('#region-main').css('background', 'pink');
 });
