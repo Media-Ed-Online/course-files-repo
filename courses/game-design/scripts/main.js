@@ -12,5 +12,6 @@ var CHAT = 'li.modtype_hsuforum'
 
 /* Modify URL+BOOK+H5P Module Group: */
 $(this).ready(function(index) {
-  
+  // table of contents:
+  $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 });
