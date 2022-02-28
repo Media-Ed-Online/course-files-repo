@@ -11,10 +11,12 @@ var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
 
 /* Modify URL+BOOK+H5P Module Group: */
-$(window).ready(function(index) {
-  
+$(document).ready(function() {
+  //attaching the event listener
+  $(window).on('hashchange', function() {
+    $('#page').css("background","pink")
+  });
 });
-
 
 
 
