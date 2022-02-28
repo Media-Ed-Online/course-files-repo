@@ -11,8 +11,8 @@ var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
 
 /* Modify URL+BOOK+H5P Module Group: */
-$(this).ready(function(index) {
-$('#page').css('background', 'green');
+$(window).ready(function(index) {
+  $('#page').css('background', 'green');
 });
 
 $(window).hashchange(function() {
