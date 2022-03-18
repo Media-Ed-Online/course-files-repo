@@ -10,13 +10,12 @@ var QUIZ = 'li.nodtype_quiz'
 var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
 
-/* Modify URL+BOOK+H5P Module Group: */
-$(document).ready(function() {
-  //attaching the event listener
-  $(window).on('hashchange', function() {
-    $('#region-main').css("background", "pink")
-  }).trigger('hashchange');
+/* Main Components: */
+$(this).ready(function(index) {
+  // table of contents:
+  $('nav#course-toc ol#chapters li:not(:contains("Discussion"))').css("border-top", "1px solid #dee2e6");
 });
+
 
 
 
