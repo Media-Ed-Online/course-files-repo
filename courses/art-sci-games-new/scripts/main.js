@@ -25,3 +25,14 @@ window.addEventListener("hashchange", myFunction);
 function myFunction() {
   alert("The anchor part has changed!");
 }
+
+function(b) {
+  var c = this.getAttribute("href");
+  if (window.history && window.history.pushState) {
+    history.pushState(null, null, c);
+    a(window).trigger("hashchange");
+    alert("The anchor part has changed!");
+  } else {
+    location.hash = c
+  }
+}
