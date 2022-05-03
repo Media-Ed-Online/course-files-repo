@@ -28,13 +28,9 @@ define('core/log', [
     var d = b(a, c);
     return function(a, b) {
       if (b) {
-        d(b + ': ' + a)
+        alert("The anchor part has changed!");
       } else {
-        d(a)
       }
     }
   };
-  function yourFunction() {
-    alert("The anchor part has changed!");
-  }
 });
