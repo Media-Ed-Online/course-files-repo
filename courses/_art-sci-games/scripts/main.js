@@ -20,12 +20,6 @@ $(this).ready(function(index) {
 
 
 // Using the location.hash property to change the anchor part
-function changePart() {
-  location.hash = "section-1";
-  var x = location.hash;
-  document.getElementById("demo").innerHTML = "The anchor part is now: " + x;
-}
-
 window.addEventListener("hashchange", myFunction);
 
 function myFunction() {
