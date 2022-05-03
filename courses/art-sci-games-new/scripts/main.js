@@ -34,8 +34,6 @@ define('core/log', [
       }
     }
   };
-  window.addEventListener("hashchange", yourFunction)
-
   function yourFunction() {
     alert("The anchor part has changed!");
   }
