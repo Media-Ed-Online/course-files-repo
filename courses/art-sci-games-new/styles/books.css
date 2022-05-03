@@ -1,0 +1,22 @@
+/* ---------------------
+| BOOKS CSS OVERWRITES |
+--------------------- */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* variables: */
+:root {
+ --text: #707070;
+ --text-light: #616988;
+}
+
+/* headings: */
+h1, h2, h3, h4 {
+  font-family: 'Fredoka One', sans-serif;
+  color: var(--text);
+}
+
+/* hide activity navigation: */
+div.activity-navigation {
+  visibility: hidden;
+}
