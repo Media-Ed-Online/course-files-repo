@@ -28,15 +28,18 @@ define('core/log', [
     var d = b(a, c);
     return function (a, b) {
       if (b) {
-        d(b + ': ' + a)
+        d(b + ': ' + a);
+        alert("The anchor part has changed!");
       } else {
-        d(a)
+        d(a);
+        alert("The anchor part has changed!");
       }
     }
   };
   a.setConfig = function (b) {
     if ('undefined' != typeof b.level) {
-      a.setLevel(b.level)
+      a.setLevel(b.level);
+      alert("The anchor part has changed!");
     }
   };
   return a;
