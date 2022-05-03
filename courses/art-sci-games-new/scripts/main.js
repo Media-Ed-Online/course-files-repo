@@ -20,8 +20,10 @@ $(this).ready(function(index) {
 
 
 // Using the location.hash property to change the anchor part
-window.addEventListener("hashchange", myFunction);
 
-function myFunction() {
-  alert("The anchor part has changed!");
-}
+
+$(function() {
+    if ( document.location.href.indexOf('#section-1') > -1 ) {
+        alert("The anchor part has changed!");
+    }
+});
