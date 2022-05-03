@@ -20,19 +20,25 @@ $(this).ready(function(index) {
 
 
 // Using the location.hash property to change the anchor part
-window.addEventListener("hashchange", myFunction);
-
-function myFunction() {
+define('core/log', [
+  'core/loglevel'
+], function (a) {
+  var b = a.methodFactory;
+  a.methodFactory = function (a, c) {
+    var d = b(a, c);
+    return function (a, b) {
+      if (b) {
+        d(b + ': ' + a)
+      } else {
+        d(a)
+      }
+    }
+  };
+  a.setConfig = function (b) {
+    if ('undefined' != typeof b.level) {
+      a.setLevel(b.level)
+    }
+  };
+  return a;
   alert("The anchor part has changed!");
-}
-
-function(b) {
-  var c = this.getAttribute("href");
-  if (window.history && window.history.pushState) {
-    history.pushState(null, null, c);
-    a(window).trigger("hashchange");
-    alert("The anchor part has changed!");
-  } else {
-    location.hash = c
-  }
-}
+});
