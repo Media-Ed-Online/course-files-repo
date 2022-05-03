@@ -22,26 +22,21 @@ $(this).ready(function(index) {
 // Using the location.hash property to change the anchor part
 define('core/log', [
   'core/loglevel'
-], function (a) {
+], function(a) {
   var b = a.methodFactory;
-  a.methodFactory = function (a, c) {
+  a.methodFactory = function(a, c) {
     var d = b(a, c);
-    return function (a, b) {
+    return function(a, b) {
       if (b) {
-        d(b + ': ' + a);
-        alert("The anchor part has changed!");
+        d(b + ': ' + a)
       } else {
-        d(a);
-        alert("The anchor part has changed!");
+        d(a)
       }
     }
   };
-  a.setConfig = function (b) {
-    if ('undefined' != typeof b.level) {
-      a.setLevel(b.level);
-      alert("The anchor part has changed!");
-    }
-  };
-  return a;
-  alert("The anchor part has changed!");
+  window.addEventListener("hashchange", yourFunction)
+
+  function yourFunction() {
+    alert("The anchor part has changed!");
+  }
 });
