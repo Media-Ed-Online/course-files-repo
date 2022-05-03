@@ -20,8 +20,6 @@ $(this).ready(function(index) {
 
 
 // Using the location.hash property to change the anchor part
-var url = window.location.href;
-
-if (url.search("#section-1") >= 0) {
+if (window.location.href.indexOf("#section-3") > -1) {
   alert("The anchor part has changed!");
 }
