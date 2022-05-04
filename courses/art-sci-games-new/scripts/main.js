@@ -14,9 +14,7 @@ var CHAT = 'li.modtype_hsuforum'
 $(document).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
+  $('span.sectionnumber').hide();
 });
 
-$('li.section').load(function() {
-  $('body').css("background","pink")
-
-})
+$('body').css("background","pink")
