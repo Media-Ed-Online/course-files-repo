@@ -24,3 +24,12 @@ if (window.location.href.indexOf("#section-1") > -1) {
     "color": "white";
   })
 }
+
+
+if(window.location.hash) {
+    var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+    alert (hash);
+    // hash found
+} else {
+    // No hash found
+}
