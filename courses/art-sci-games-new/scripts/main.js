@@ -17,7 +17,7 @@ $(document).ready(function(index) {
 });
 
 
-$(document).ready(function() {
+$(window).ready(function() {
   if (window.location.href.indexOf("#section-1") > -1) {
     $('#page-header').css({
       "background-color": "teal";
