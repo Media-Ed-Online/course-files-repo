@@ -15,10 +15,15 @@ $(document).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 });
-$('#page-header').css({
-  "background-color": "teal";
-  "color": "white";
-})
+
+
+
+if (window.location.href.indexOf("#section-1") > -1) {
+  $('#page-header').css({
+    "background-color": "teal",
+    "color": "white",
+  })
+}
 
 
 if(window.location.hash) {
