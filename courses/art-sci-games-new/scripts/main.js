@@ -26,10 +26,12 @@ if (window.location.href.indexOf("#section-1") > -1) {
 }
 
 
-if(window.location.hash) {
+$(window).on('load', function() {
+  if (window.location.hash) {
     var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-    alert (hash);
+    alert(hash);
     // hash found
-} else {
+  } else {
     // No hash found
-}
+  }
+})
