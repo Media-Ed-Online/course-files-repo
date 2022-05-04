@@ -19,6 +19,9 @@ $(document).ready(function(index) {
 
 $(document).ready(function() {
   if (window.location.href.indexOf("#section-1") > -1) {
-      alert("found it");
+    $('#page-header').css({
+      "background-color": "teal";
+      "color":"white";
+    })
   }
 });
