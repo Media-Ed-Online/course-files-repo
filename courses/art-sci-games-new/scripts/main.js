@@ -17,11 +17,10 @@ $(document).ready(function(index) {
 });
 
 
-$(window).ready(function() {
-  if (window.location.href.indexOf("#section-1") > -1) {
-    $('#page-header').css({
-      "background-color": "teal";
-      "color":"white";
-    })
-  }
-});
+
+if (window.location.href.indexOf("#section-1") > -1) {
+  $('#page-header').css({
+    "background-color": "teal";
+    "color": "white";
+  })
+}
