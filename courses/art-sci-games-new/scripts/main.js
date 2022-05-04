@@ -16,22 +16,7 @@ $(document).ready(function(index) {
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 });
 
+$('li.section').load(function() {
+  $('body').css("background","pink")
 
-
-if (window.location.href.indexOf("#section-1") > -1) {
-  $('#page-header').css({
-    "background-color": "teal",
-    "color": "white",
-  })
-}
-
-
-$(window).on('load', function() {
-  if (window.location.hash) {
-    var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-    alert(hash);
-    // hash found
-  } else {
-    // No hash found
-  }
 })
