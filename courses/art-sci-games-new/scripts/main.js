@@ -17,7 +17,7 @@ $(document).ready(function(index) {
 });
 
 $(document).ready(function() {
-  $('.chapter-title').click(function() {
+  $('nav a.chapter-title').click(function() {
     $('ul.topics li.section h2.sectionname span.sectionnumber').hide();
   });
 });
