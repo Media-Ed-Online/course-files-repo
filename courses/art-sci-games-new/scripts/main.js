@@ -16,6 +16,6 @@ $(document).ready(function(index) {
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 });
 
-$('li.section').load(fucntion) {
+$.each('li.section').load(fucntion) {
   $('ul.topics li.section h2.sectionname span.sectionnumber').hide();
 }
