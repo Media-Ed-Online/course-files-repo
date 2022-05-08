@@ -11,7 +11,7 @@ var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
 
 /* Main Components: */
-$.ready(function(index) {
+$(document).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 
