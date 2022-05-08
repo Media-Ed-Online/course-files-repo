@@ -11,11 +11,9 @@ var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
 
 /* Main Components: */
-$(document).ready(function(index) {
+$(window).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 
-  $('li.section').each(function() {
-    $('h2.sectionname span.sectionnumber').hide();
-  });
+  $('li.section h2.sectionname span.sectionnumber').hide();
 });
