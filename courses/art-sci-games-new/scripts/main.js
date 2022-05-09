@@ -12,11 +12,13 @@ var CHAT = 'li.modtype_hsuforum'
 
 /* Main Components: */
 $(document).ready(function(index) {
-  // table of contents:
+  // table of contents, separate sections:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
+  // table of contents, hide completion status:
+  $("nav#course-toc a.chapter-title + span.completionstatus").hide();
 });
 
-/* DOM Changes */
+/* On DOM Changes: */
 $('body').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 });
