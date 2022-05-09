@@ -18,5 +18,5 @@ $(document).ready(function(index) {
 
 /* DOM Changes */
 $('body').on('DOMNodeInserted', function(e) {
-  $('li.section h2.sectionname span.sectionnumber').hide();
+  $('li.section h2.sectionname span.sectionnumber').css("color","blue");
 });
