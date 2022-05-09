@@ -14,8 +14,9 @@ var CHAT = 'li.modtype_hsuforum'
 $(document).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
-
-  $('div#moodle-blocks').parentsUntil('section#region-main').find('div.course-content ul.topics li.section h2.sectionname span.sectionnumber').hide();
 });
 
-$('div#moodle-blocks').parentsUntil('section#region-main').css("background","red")
+/* DOM Changes */
+$('body').on('DOMNodeInserted', function(e) {
+  $('li.section h2.sectionname span.sectionnumber').hide();
+});
