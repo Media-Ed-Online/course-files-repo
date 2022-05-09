@@ -15,8 +15,5 @@ $(document).ready(function(index) {
   // table of contents:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
 
-  let findMe = $('div').parentsUntil('section#region-main').find('div.course-content ul.topics li.section')
-  findMe.each(function)() {
-    $('h2.sectionname span.sectionnumber').hide();
-  });
+  $('div').parentsUntil('section#region-main').find('div.course-content ul.topics li.section h2.sectionname span.sectionnumber').hide();
 });
