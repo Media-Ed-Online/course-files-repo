@@ -18,4 +18,4 @@ $(document).ready(function(index) {
   $('div#moodle-blocks').parentsUntil('section#region-main').find('div.course-content ul.topics li.section h2.sectionname span.sectionnumber').hide();
 });
 
-$('div#moodle-blocks').parentsUntil('section#region-main').find('div.course-content ul.topics li.section h2.sectionname span.sectionnumber').hide();
+$('div#moodle-blocks').parentsUntil('section#region-main').css("background","red")
