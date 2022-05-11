@@ -17,12 +17,13 @@ $(document).ready(function(index) {
   // table of contents, hide completion status:
   $("nav#course-toc a.chapter-title + span.completionstatus").hide();
 });
-$(URL).each(function(index) {
-  //-- 1. remove url overflow mask + other covers
-  $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-});
 
 /* On DOM Changes: */
 $('body').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
+
+  $(URL).each(function(index) {
+    //-- 1. remove url overflow mask + other covers
+    $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+  });
 });
