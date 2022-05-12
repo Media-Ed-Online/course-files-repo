@@ -24,9 +24,6 @@ $('body').on('DOMNodeInserted', function(e) {
 
   $(URL).each(function(index) {
     //-- 1. remove url overflow mask + other covers
-    $(this).css({
-      "background": "blue",
-      "color": "red"
-    })
+    $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
   });
 });
