@@ -30,12 +30,5 @@ $('body').on('DOMNodeInserted', function(e) {
     $(this).find(".snap-asset-content .contentafterlink .no-overflow").removeClass("no-overflow");
     $(this).find(".snap-assettype").css("height", "0px");
     $(this).find(".snap-header-card").css("display", "none");
-
-    //-- 2. move module title to new home
-    let oldTitle = $(this).find(".snap-asset-link")
-    let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-    // save the title, remove it, and add to new location
-    oldTitle.remove();
-    newTitle.append(oldTitle);
   });
 });
