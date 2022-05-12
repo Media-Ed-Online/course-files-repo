@@ -20,8 +20,11 @@ $(document).ready(function(index) {
 
 /* On DOM Changes: */
 $('body').on('DOMNodeInserted', function(e) {
+  // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
+  /* Modify URL+BOOK+H5P Module Group: */
+  // Move URL title:
   $(URL).each(function(index) {
     //-- 1. remove url overflow mask + other covers
     $(this).find(".snap-asset-content .contentafterlink .no-overflow").removeClass("no-overflow");
