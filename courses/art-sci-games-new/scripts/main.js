@@ -25,7 +25,7 @@ $('body').on('DOMNodeInserted', function(e) {
   $(URL).each(function(index) {
     //-- 1. remove url overflow mask + other covers
     $(this).find(".snap-asset-content .contentafterlink .no-overflow").removeClass("no-overflow");
-    //$(this).find(".snap-assettype").css("height", "0px");
+    $(this).find(".snap-assettype").css("height", "0px");
     //$(this).find(".snap-header-card").css("display", "none");
   });
 });
