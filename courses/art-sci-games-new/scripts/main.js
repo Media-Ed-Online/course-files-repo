@@ -25,18 +25,7 @@ $('body').on('DOMNodeInserted', function(e) {
 
   /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
-  $('li').nextUntil('li').ready(function() {
-    let a = $('li.modtype_url .snap-asset-link a').text();
-    let b = $('li.modtype_book h3.snap-asset-link').text();
 
-    alert("a is -> " + a + "\nb is -> " + b + "\n");
-
-    if (a === b) { // if these two variables match
-      $("p.instancename").css('color', 'red'); // color 'div.main' red
-    } else {
-
-    }
-  });
 
   // Move URL title:
   /*$(URL).each(function(index) {
