@@ -24,11 +24,25 @@ $('body').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   /* Modify URL+BOOK+H5P Module Group: */
+  // Group URL+BOOK+H5P together:
+  $('li').nextUntil('li').ready(function() { // for each 'div.main'
+    let a = $('li.modtype_url .snap-asset-link a').text();
+    let b = $('li.modtype_book h3.snap-asset-link').text();
+
+    alert("a is -> " + a + "\nb is -> " + b + "\n");
+
+    if (a === b) { // if these two variables match
+      $("p.instancename").css('color', 'red'); // color 'div.main' red
+    } else {
+      alert('no matches exist');
+    }
+  });
+  
   // Move URL title:
-  $(URL).each(function(index) {
+  /*$(URL).each(function(index) {
     //-- 1. remove url overflow mask + other covers
     $(this).find(".snap-asset-content .contentafterlink .no-overflow").removeClass("no-overflow");
     $(this).find(".snap-assettype").css("height", "0px");
     $(this).find(".snap-header-card").css("display", "none");
-  });
+  });*/
 });
