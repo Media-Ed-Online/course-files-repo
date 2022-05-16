@@ -34,17 +34,17 @@ $('body').on('DOMNodeInserted', function(e) {
     $(this).find(".snap-assettype").css("height", "0px");
     $(this).find(".snap-header-card").css("display", "none");
   });*/
+});
 
-  $('li').nextUntil('li').ready(function() { // for each 'div.main'
-    let a = $('li.modtype_url .snap-asset-link a').text();
-    let b = $('li.modtype_book h3.snap-asset-link').text();
+$('li.section').nextUntil('li.section').ready(function() { // for each 'div.main'
+  let a = $('li.modtype_url .snap-asset-link a').text();
+  let b = $('li.modtype_book h3.snap-asset-link').text();
 
-    alert("a is -> " + a + "\nb is -> " + b + "\n");
+  alert("a is -> " + a + "\nb is -> " + b + "\n");
 
-    if (a === b) { // if these two variables match
-      $("p.instancename").css('color', 'red'); // color 'div.main' red
-    } else {
-      alert('no matches exist');
-    }
-  });
+  if (a === b) { // if these two variables match
+    $("p.instancename").css('color', 'red'); // color 'div.main' red
+  } else {
+    alert('no matches exist');
+  }
 });
