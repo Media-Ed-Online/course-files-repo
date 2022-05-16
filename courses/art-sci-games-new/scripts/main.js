@@ -25,7 +25,7 @@ $('body').on('DOMNodeInserted', function(e) {
 
   /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
-  $(this).ready(function() { 
+  $(this).ready(function() {
     let a = $('li.modtype_url .snap-asset-link a').text();
     let b = $('li.modtype_book h3.snap-asset-link').text();
 
@@ -34,7 +34,7 @@ $('body').on('DOMNodeInserted', function(e) {
     if (a === b) { // if these two variables match
       $("p.instancename").css('color', 'red'); // color 'div.main' red
     } else {
-      alert('no matches exist');
+      
     }
   });
 
