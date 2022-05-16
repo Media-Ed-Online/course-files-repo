@@ -25,7 +25,7 @@ $('body').on('DOMNodeInserted', function(e) {
 
   /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
-  $('li').nextUntil('li').ready(function() { // for each 'div.main'
+  $(this).ready(function() { 
     let a = $('li.modtype_url .snap-asset-link a').text();
     let b = $('li.modtype_book h3.snap-asset-link').text();
 
@@ -37,7 +37,7 @@ $('body').on('DOMNodeInserted', function(e) {
       alert('no matches exist');
     }
   });
-  
+
   // Move URL title:
   /*$(URL).each(function(index) {
     //-- 1. remove url overflow mask + other covers
