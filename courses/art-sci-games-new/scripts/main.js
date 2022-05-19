@@ -25,9 +25,9 @@ $('body').on('DOMNodeInserted', function(e) {
 
   /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
-  $(URL).nextUntil(URL).ready(function() {
-    let a = $(this).find('.snap-asset-link a').text();
-    let b = $(this).prev().find('li.modtype_book h3.snap-asset-link').text();
+  $(this).nextUntil('li.section').ready(function() {
+    let a = $(URL).find('.snap-asset-link a').text();
+    let b = $(BOOK).find('li.modtype_book h3.snap-asset-link').text();
 
     alert("a is -> " + a + "\nb is -> " + b + "\n");
 
