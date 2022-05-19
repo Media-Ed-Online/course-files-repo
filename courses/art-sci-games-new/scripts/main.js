@@ -24,7 +24,7 @@ $('body').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  if ($("li").hasClass("state-visible")) {
+  if ($("li").hasClass("state-visibled")) {
     let a = $(URL).find('.snap-asset-link a').text();
     let b = $(BOOK).find('h3.snap-asset-link').text();
 
