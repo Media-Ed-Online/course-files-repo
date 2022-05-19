@@ -19,7 +19,7 @@ $(document).ready(function(index) {
 });
 
 /* On DOM Changes: */
-$('ul.topics').on('DOMNodeInserted', function(e) {
+$('li.section').on('DOMNodeInserted', function(e) {
   // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
