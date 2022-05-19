@@ -23,28 +23,17 @@ $('body').on('DOMNodeInserted', function(e) {
   // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
+  $('li.state-visible').ready(function() {
+    let a = $(URL).find('.snap-asset-link a').text();
+    let b = $(BOOK).find('h3.snap-asset-link').text();
 
+    alert("a is -> " + a + "\nb is -> " + b + "\n");
 
-  // Move URL title:
-  /*$(URL).each(function(index) {
-    //-- 1. remove url overflow mask + other covers
-    $(this).find(".snap-asset-content .contentafterlink .no-overflow").removeClass("no-overflow");
-    $(this).find(".snap-assettype").css("height", "0px");
-    $(this).find(".snap-header-card").css("display", "none");
-  });*/
-});
+    if (a === b) { // if these two variables match
+      $("p.instancename").css('color', 'red'); // color 'div.main' red
+    } else {
 
-$('li.state-visible').ready(function() {
-  let a = $(URL).find('.snap-asset-link a').text();
-  let b = $(BOOK).find('h3.snap-asset-link').text();
-
-  alert("a is -> " + a + "\nb is -> " + b + "\n");
-
-  if (a === b) { // if these two variables match
-    $("p.instancename").css('color', 'red'); // color 'div.main' red
-  } else {
-
-  }
+    }
+  });
 });
