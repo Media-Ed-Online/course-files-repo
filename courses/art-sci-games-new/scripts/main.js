@@ -24,7 +24,7 @@ $('body').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  $('li.state-visible').load(function() {
+  if ($("li").hasClass("state-visible")) {
     let a = $(URL).find('.snap-asset-link a').text();
     let b = $(BOOK).find('h3.snap-asset-link').text();
 
@@ -35,5 +35,5 @@ $('body').on('DOMNodeInserted', function(e) {
     } else {
 
     }
-  });
+  };
 });
