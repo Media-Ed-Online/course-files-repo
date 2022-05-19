@@ -27,7 +27,7 @@ $('body').on('DOMNodeInserted', function(e) {
   // Group URL+BOOK+H5P together:
   $('li.section').nextUntil('li.section').visible().ready(function() {
     let a = $(URL).find('.snap-asset-link a').text();
-    let b = $(BOOK).find('li.modtype_book h3.snap-asset-link').text();
+    let b = $(BOOK).find('h3.snap-asset-link').text();
 
     alert("a is -> " + a + "\nb is -> " + b + "\n");
 
