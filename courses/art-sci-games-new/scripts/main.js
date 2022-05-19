@@ -25,7 +25,7 @@ $('body').on('DOMNodeInserted', function(e) {
 
   /* Modify URL+BOOK+H5P Module Group: */
   // Group URL+BOOK+H5P together:
-  $('li.section').hasClass('state-visible').ready(function() {
+  $('li.section').ready(function() {
     let a = $(URL).find('.snap-asset-link a').text();
     let b = $(BOOK).find('h3.snap-asset-link').text();
 
