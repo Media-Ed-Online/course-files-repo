@@ -19,12 +19,12 @@ $(document).ready(function(index) {
 });
 
 /* On DOM Changes: */
-$('body').on('DOMNodeInserted', function(e) {
+$('ul.topics').on('DOMNodeInserted', function(e) {
   // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  if ($("ul.topics li").hasClass("state-visible")) {
+  if ($("li").hasClass("state-visible")) {
     let a = $(URL).find('.snap-asset-link a').text();
     let b = $(BOOK).find('h3.snap-asset-link').text();
 
