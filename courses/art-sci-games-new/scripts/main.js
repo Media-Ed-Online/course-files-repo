@@ -19,24 +19,6 @@ $(document).ready(function(index) {
 });
 
 /* On DOM Changes: */
-/*$('li.section').on('DOMNodeInserted', function(e) {
-  // remove section number from topics view:
-  $('li.section h2.sectionname span.sectionnumber').hide();
-
-  // Group URL+BOOK together:
-  var data1 = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
-    //return index + ": " + $(this).text();
-    return $(this).text()
-  }).get();
-  var data2 = $("li.section.state-visible").find("li.modtype_book p.instancename").map(function(index) {
-    return $(this).text();
-  }).get();
-
-  const filteredArray = data1.filter(value => data2.includes(value));
-
-  alert(filteredArray)
-});*/
-
 
 // identify an element to observe
 const elementToObserve = document.querySelector("ul.topics");
