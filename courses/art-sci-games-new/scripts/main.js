@@ -31,17 +31,17 @@ $('li.section').on('DOMNodeInserted', function(e) {
     return index + ": " + $(this).text();
   }).get();
 
-  alert(data1 + data2);
+  const filteredArray = data1.filter(value => data2.includes(value));
 
-  const filteredArray = array1.filter(value => array2.includes(value));
+  alert(filteredArray)
 
-  function intersect(a, b) {
+  /*function intersect(data1, data2) {
     var t;
     if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
     return a.filter(function(e) {
       return b.indexOf(e) > -1;
     });
-  }
+  }*/
 
 
   /*let a = $(this).find('li.modtype_url .snap-asset-link a').text();
