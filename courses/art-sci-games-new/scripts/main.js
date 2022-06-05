@@ -24,14 +24,16 @@ $('li.section').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  let a = $('li.section.state-visible > ul.section li.modtype_url .activityinstance .snap-asset-content h3.snap-asset-link a p.instancename').text();
-  let b = $('li.section.state-visible > li.modtype_book h3.snap-asset-link').text();
+  if ($("li").hasClass("state-visible")) {
+    let a = $(this).find('li.modtype_url .snap-asset-link a').text();
+    let b = $(this).find('li.modtype_book h3.snap-asset-link').text();
 
-  alert("a is -> " + a + "\nb is -> " + b + "\n");
+    alert("a is -> " + a + "\nb is -> " + b + "\n");
 
-  if (a === b) { // if these two variables match
-    $("p.instancename").css('color', 'red'); // color 'div.main' red
-  } else {
+    if (a === b) { // if these two variables match
+      $("p.instancename").css('color', 'red'); // color 'div.main' red
+    } else {
 
-  }
+    }
+  };
 });
