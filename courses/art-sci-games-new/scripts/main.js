@@ -26,7 +26,7 @@ const observeTopicsList = document.querySelector("ul.topics li");
 // create a new instance of `MutationObserver` named `observer`,
 // passing it a callback function
 const observer = new MutationObserver(function() {
-  console.log('callback that runs when observer is triggered');
+  $('li.section h2.sectionname span.sectionnumber').hide();
 });
 
 // call `observe()` on that MutationObserver instance,
