@@ -37,8 +37,12 @@ $(document).ready(function(index) {
   alert(filteredArray)
 });*/
 
+
+
+
+
 // Select the node that will be observed for mutations
-const targetNode = document.getElementsByClassName('ul.topics');
+const targetNode = document.getElementsByClassName('topics');
 
 // Options for the observer (which mutations to observe)
 const config = { attributes: true, childList: true, subtree: true };
