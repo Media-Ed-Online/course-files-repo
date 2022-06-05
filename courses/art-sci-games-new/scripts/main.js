@@ -30,7 +30,7 @@ $('li.section').on('DOMNodeInserted', function(e) {
     alert("a is -> " + a + "\nb is -> " + b + "\n");
 
     if (a === b) { // if these two variables match
-      $("p.instancename").css('color', 'red'); // color 'div.main' red
+      $(a + "p.instancename").css('color', 'red'); // color 'div.main' red
     } else {
 
     }
