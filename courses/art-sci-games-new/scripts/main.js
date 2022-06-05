@@ -25,10 +25,11 @@ $('li.section').on('DOMNodeInserted', function(e) {
 
   // Group URL+BOOK+H5P together:
   var data1 = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
-    return index + ": " + $(this).text();
+    //return index + ": " + $(this).text();
+    return $(this).text()
   }).get();
   var data2 = $("li.section.state-visible").find("li.modtype_book p.instancename").map(function(index) {
-    return index + ": " + $(this).text();
+    return $(this).text();
   }).get();
 
   const filteredArray = data1.filter(value => data2.includes(value));
