@@ -32,9 +32,11 @@ $('li.section').on('DOMNodeInserted', function(e) {
     return $(this).text();
   }).get();
 
-  const filteredArray = data1.filter(value => data2.includes(value));
+  var filteredArray = data1.filter(function(n) {
+      return data2.indexOf(n) !== -1;
+  });
 
-  $(filteredArray).css("color","red")
+  //const filteredArray = data1.filter(value => data2.includes(value));
 
   alert(filteredArray)
 });
