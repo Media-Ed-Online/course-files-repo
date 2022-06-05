@@ -24,6 +24,8 @@ $('li.section').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK together:
+
+  // 1. Map items under topic:
   var data1 = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
     //return index + ": " + $(this).text();
     return $(this).text()
@@ -31,13 +33,13 @@ $('li.section').on('DOMNodeInserted', function(e) {
   var data2 = $("li.section.state-visible").find("li.modtype_book p.instancename").map(function(index) {
     return $(this).text();
   }).get();
-
+  // 2. Create new const
   const filteredArray = data1.filter(value => data2.includes(value));
-
+  // 3. Apply
   var filteredArray = data1.filter(function(n) {
     return data2.indexOf(n) !== -1;
-    $(this).css("font-family", "monospace")
   });
 
+  $(filteredArray).css("font-family", "monospace")
   alert(filteredArray)
 });
