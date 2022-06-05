@@ -24,8 +24,8 @@ $('li.section').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  let a = $(this).find('> li.modtype_url .snap-asset-link a').text();
-  let b = $(this).find('> li.modtype_book h3.snap-asset-link').text();
+  let a = $('li.section > li.modtype_url .snap-asset-link a').text();
+  let b = $('li.section > li.modtype_book h3.snap-asset-link').text();
 
   alert("a is -> " + a + "\nb is -> " + b + "\n");
 
