@@ -24,12 +24,12 @@ const observeTopicsList = document.querySelector("ul.topics li");
 const observer = new MutationObserver(function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  /*let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
+  var data1 = $(URL).map(function(index) {
     //return index + ": " + $(this).text();
-    return $(this).text()
+    return $("p.instancename").text()
   }).get();
-  let data2 = $(this).find("li.modtype_book p.instancename").map(function(index) {
-    return $(this).text();
+  let data2 = $(BOOK).map(function(index) {
+    return $("p.instancename").text()
   }).get();
 
   const filteredArray = data1.filter(value => data2.includes(value));*/
