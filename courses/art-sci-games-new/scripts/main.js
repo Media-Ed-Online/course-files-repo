@@ -32,11 +32,12 @@ $('li.section').on('DOMNodeInserted', function(e) {
     return $(this).text();
   }).get();
 
-  var filteredArray = data1.filter(function(n) {
-      return data2.indexOf(n) !== -1;
-  });
+  const filteredArray = data1.filter(value => data2.includes(value));
 
-  //const filteredArray = data1.filter(value => data2.includes(value));
+  var filteredArray = data1.filter(function(n) {
+    return data2.indexOf(n) !== -1;
+    $(this).css("font-family", "monospace")
+  });
 
   alert(filteredArray)
 });
