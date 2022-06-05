@@ -24,11 +24,25 @@ $('li.section').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  var data = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
+  var data1 = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
+    return index + ": " + $(this).text();
+  }).get();
+  var data2 = $("li.section.state-visible").find("li.modtype_book p.instancename").map(function(index) {
     return index + ": " + $(this).text();
   }).get();
 
-  alert(data);
+  alert(data1 + data2);
+
+  const filteredArray = array1.filter(value => array2.includes(value));
+
+  function intersect(a, b) {
+    var t;
+    if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
+    return a.filter(function(e) {
+      return b.indexOf(e) > -1;
+    });
+  }
+
 
   /*let a = $(this).find('li.modtype_url .snap-asset-link a').text();
   let b = $(this).find('li.modtype_book h3.snap-asset-link').text();
