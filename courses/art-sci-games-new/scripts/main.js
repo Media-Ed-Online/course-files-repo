@@ -24,7 +24,7 @@ const observeTopicsList = document.querySelector("ul.topics li");
 const observer = new MutationObserver(function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
+  /*let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
     //return index + ": " + $(this).text();
     return $(this).text()
   }).get();
@@ -32,7 +32,7 @@ const observer = new MutationObserver(function(e) {
     return $(this).text();
   }).get();
 
-  const filteredArray = data1.filter(value => data2.includes(value));
+  const filteredArray = data1.filter(value => data2.includes(value));*/
 
   alert(filteredArray)
 });
