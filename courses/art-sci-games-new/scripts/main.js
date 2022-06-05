@@ -25,8 +25,8 @@ $('li.section').on('DOMNodeInserted', function(e) {
 
   // Group URL+BOOK+H5P together:
   if ($("li").hasClass("state-visible")) {
-    let a = $().find('li.modtype_url .snap-asset-link a').nextUntil('li.section').text();
-    let b = $(this).find('li.modtype_book h3.snap-asset-link').nextUntil('li.section').text();
+    let a = $(this).children().find('li.modtype_url .snap-asset-link a').text();
+    let b = $('li.modtype_book h3.snap-asset-link').text();
 
     alert("a is -> " + a + "\nb is -> " + b + "\n");
 
