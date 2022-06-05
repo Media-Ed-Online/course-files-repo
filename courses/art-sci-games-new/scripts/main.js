@@ -25,6 +25,8 @@ $('li.section').on('DOMNodeInserted', function(e) {
 
   // Group URL+BOOK+H5P together:
   if ($("li").hasClass("state-visible")) {
+    $(this).css("background", "blue");
+
     let a = $(this).find('> li.modtype_url .snap-asset-link a').text();
     let b = $(this).find('> li.modtype_book h3.snap-asset-link').text();
 
