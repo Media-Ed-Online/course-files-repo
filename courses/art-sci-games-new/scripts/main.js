@@ -24,11 +24,11 @@ const observeTopicsList = document.querySelector("ul.topics li");
 const observer = new MutationObserver(function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  var data1 = $(URL).map(function(index) {
+  var data1 = $(this).find(URL).map(function(index) {
     //return index + ": " + $(this).text();
     return $("p.instancename").text()
   }).get();
-  let data2 = $(BOOK).map(function(index) {
+  let data2 = $(this).find(BOOK).map(function(index) {
     return $("p.instancename").text()
   }).get();
 
