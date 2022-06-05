@@ -21,18 +21,20 @@ $(document).ready(function(index) {
 /* DOM Changes & Observations: */
 const observeTopicsList = document.querySelector("ul.topics li");
 
-const observer = new MutationObserver(function(e) {
+const observer = new MutationObserver(function() {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  var data1 = $(URL).map(function(index) {
+  let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
     //return index + ": " + $(this).text();
-    return $("p.instancename").text()
+    return $(this).text()
   }).get();
-  let data2 = $(BOOK).map(function(index) {
-    return $("p.instancename").text()
+  let data2 = $(this).find("li.modtype_book p.instancename").map(function(index) {
+    return $(this).text();
   }).get();
 
-  const filteredArray = data1.filter(value => data2.includes(value));
+  const filteredArray = data1.filter(value => data2.includes(value))(function(e) {
+    $('p').css("font-size", "30px")
+  });
 
   alert(filteredArray)
 });
