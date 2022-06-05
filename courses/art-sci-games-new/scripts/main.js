@@ -18,19 +18,14 @@ $(document).ready(function(index) {
   $("nav#course-toc a.chapter-title + span.completionstatus").hide();
 });
 
-/* On DOM Changes: */
+/* DOM Changes & Observations: */
 
-// identify an element to observe
 const observeTopicsList = document.querySelector("ul.topics li");
 
-// create a new instance of `MutationObserver` named `observer`,
-// passing it a callback function
-const observer = new MutationObserver(function() {
+const observer = new MutationObserver(function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 });
 
-// call `observe()` on that MutationObserver instance,
-// passing it the element to observe, and the options object
 observer.observe(observeTopicsList, {
   subtree: true,
   childList: true
