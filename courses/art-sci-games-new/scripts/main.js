@@ -23,7 +23,7 @@ $('li.section').on('DOMNodeInserted', function(e) {
   // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
-  // Group URL+BOOK+H5P together:
+  // Group URL+BOOK together:
   var data1 = $("li.section.state-visible").find("li.modtype_url p.instancename").map(function(index) {
     //return index + ": " + $(this).text();
     return $(this).text()
@@ -34,25 +34,7 @@ $('li.section').on('DOMNodeInserted', function(e) {
 
   const filteredArray = data1.filter(value => data2.includes(value));
 
+  $(filteredArray).css("color","red")
+
   alert(filteredArray)
-
-  /*function intersect(data1, data2) {
-    var t;
-    if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
-    return a.filter(function(e) {
-      return b.indexOf(e) > -1;
-    });
-  }*/
-
-
-  /*let a = $(this).find('li.modtype_url .snap-asset-link a').text();
-  let b = $(this).find('li.modtype_book h3.snap-asset-link').text();
-
-  alert("a is -> " + a + "\nb is -> " + b + "\n");
-
-  if (a === b) { // if these two variables match
-    $(a + "p.instancename").css('color', 'red'); // color 'div.main' red
-  } else {
-
-  }*/
 });
