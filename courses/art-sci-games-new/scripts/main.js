@@ -21,14 +21,17 @@ $(document).ready(function(index) {
 /* On DOM Changes: */
 
 // identify an element to observe
-const elementToObserve = document.querySelector("ul.topics");
+const observeTopicsList = document.querySelector("ul.topics li");
 
 // create a new instance of `MutationObserver` named `observer`,
 // passing it a callback function
 const observer = new MutationObserver(function() {
-    console.log('callback that runs when observer is triggered');
+  console.log('callback that runs when observer is triggered');
 });
 
 // call `observe()` on that MutationObserver instance,
 // passing it the element to observe, and the options object
-observer.observe(elementToObserve, {subtree: true, childList: true});
+observer.observe(observeTopicsList, {
+  subtree: true,
+  childList: true
+});
