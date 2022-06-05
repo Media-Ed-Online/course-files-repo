@@ -38,7 +38,7 @@ $(document).ready(function(index) {
 });*/
 
 // Select the node that will be observed for mutations
-const targetNode = document.getElementById('li.section');
+const targetNode = document.getElementById('ul.topics');
 
 // Options for the observer (which mutations to observe)
 const config = { attributes: true, childList: true, subtree: true };
