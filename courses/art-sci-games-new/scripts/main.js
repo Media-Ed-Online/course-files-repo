@@ -37,8 +37,22 @@ $(document).ready(function(index) {
   alert(filteredArray)
 });*/
 
-document.addEventListener('animationstart', function(event){
-    if (event.animationName == 'nodeInserted'){
-        $('li.section h2.sectionname span.sectionnumber').hide();
+new MutationObserver(callback)
+
+function callback(mutationList, observer) {
+  mutationList.forEach( (mutation) => {
+    switch(mutation.type) {
+      case 'childList':
+        /* One or more children have been added to and/or removed
+           from the tree.
+           (See mutation.addedNodes and mutation.removedNodes.) */
+        break;
+      case 'attributes':
+        /* An attribute value changed on the element in
+           mutation.target.
+           The attribute name is in mutation.attributeName, and
+           its previous value is in mutation.oldValue. */
+        break;
     }
-}, true);
+  });
+}
