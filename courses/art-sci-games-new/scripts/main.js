@@ -19,7 +19,7 @@ $(document).ready(function(index) {
 });
 
 /* On DOM Changes: */
-$('li.section').on('DOMNodeInserted', function(e) {
+/*$('li.section').on('DOMNodeInserted', function(e) {
   // remove section number from topics view:
   $('li.section h2.sectionname span.sectionnumber').hide();
 
@@ -34,9 +34,15 @@ $('li.section').on('DOMNodeInserted', function(e) {
 
   const filteredArray = data1.filter(value => data2.includes(value));
 
-  $.each(filteredArray, function(value) {
-    $(this).css("font-family","monospace")
-  });
-
   alert(filteredArray)
+});*/
+
+const observer = new MutationObserver(function(mutations_list) {
+	mutations_list.forEach(function(mutation) {
+		mutation.addedNodes.forEach(function(added_node) {
+			$('li.section h2.sectionname span.sectionnumber').hide();
+				observer.disconnect();
+		});
+	});
 });
+observer.observe(document.querySelector("li"), { subtree: false, childList: true });
