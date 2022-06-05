@@ -37,22 +37,16 @@ $(document).ready(function(index) {
   alert(filteredArray)
 });*/
 
-new MutationObserver(callback)
 
-function callback(mutationList, observer) {
-  mutationList.forEach( (mutation) => {
-    switch(mutation.type) {
-      case 'childList':
-        /* One or more children have been added to and/or removed
-           from the tree.
-           (See mutation.addedNodes and mutation.removedNodes.) */
-        break;
-      case 'attributes':
-        /* An attribute value changed on the element in
-           mutation.target.
-           The attribute name is in mutation.attributeName, and
-           its previous value is in mutation.oldValue. */
-        break;
-    }
-  });
-}
+// identify an element to observe
+const elementToObserve = document.querySelector("ul.topics");
+
+// create a new instance of `MutationObserver` named `observer`,
+// passing it a callback function
+const observer = new MutationObserver(function() {
+    console.log('callback that runs when observer is triggered');
+});
+
+// call `observe()` on that MutationObserver instance,
+// passing it the element to observe, and the options object
+observer.observe(elementToObserve, {subtree: true, childList: true});
