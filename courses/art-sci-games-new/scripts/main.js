@@ -24,7 +24,7 @@ $('li.section').on('DOMNodeInserted', function(e) {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   // Group URL+BOOK+H5P together:
-  var data = $("li.section li.activity p.instancename").map(function(index) {
+  var data = $("li.section.state-visible li.activity p.instancename").map(function(index) {
     return index + ": " + $(this).text();
   }).get();
 
