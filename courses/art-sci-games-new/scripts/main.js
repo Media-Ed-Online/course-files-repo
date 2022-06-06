@@ -25,8 +25,7 @@ const observer = new MutationObserver(function() {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
-    //return index + ": " + $(this).text();
-    return $(this).text()
+    return index + ": " + $(this).text();
   }).get();
   let data2 = $(this).find("li.modtype_book p.instancename").map(function(index) {
     return $(this).text();
