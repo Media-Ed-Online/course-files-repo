@@ -21,7 +21,7 @@ $(document).ready(function(index) {
 /* DOM Changes & Observations: */
 const observeTopicsList = document.querySelector("ul.topics li");
 
-const observer = new MutationObserver(function(e) {
+const observer = new MutationObserver(function() {
   $('li.section h2.sectionname span.sectionnumber').hide();
 
   let data1 = $(this).find("li.modtype_url p.instancename").map(function(index) {
