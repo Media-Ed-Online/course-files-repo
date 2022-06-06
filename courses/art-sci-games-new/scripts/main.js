@@ -34,6 +34,7 @@ const observer = new MutationObserver(function() {
   const filteredArray = data1.filter(value => data2.includes(value));
 
   alert(filteredArray)
+  alert(data1)
 });
 
 observer.observe(observeTopicsList, {
