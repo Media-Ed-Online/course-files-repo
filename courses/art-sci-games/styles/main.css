@@ -11,8 +11,6 @@
  --text-light: #616988;
 }
 
-$warning: pink;
-
 /* table of contents: */
 #page-mast h1 {
   font-family: 'Quicksand', sans-serif;
