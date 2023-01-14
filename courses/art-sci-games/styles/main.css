@@ -27,7 +27,8 @@ nav#course-toc ol#chapters li span.sectionnumber {
 /* styling paper */
 #paper {
   width: 100%;
-  height: 90%;
+  height: 100%;
+  overflow: hidden;
   /*position: relative;
   margin: 20px auto;
   padding-top: 40px;
