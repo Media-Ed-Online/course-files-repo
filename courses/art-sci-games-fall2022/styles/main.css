@@ -2,8 +2,7 @@
 | MAIN CSS OVERWRITES |
 -------------------- */
 /* fonts */
-/*@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 /* variables: */
 :root {
@@ -13,42 +12,11 @@
 
 /* table of contents: */
 #page-mast h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-color: #FF9A3D;
+    font-family: "Fredoka One";
 }
 nav#course-toc ol#chapters {
   list-style-type: none;
 }
 nav#course-toc ol#chapters li span.sectionnumber {
   display: none;
-}
-
-/* styling paper */
-#paper {
-  width: 600px;
-  height: 700px;
-  position: relative;
-  margin: 20px auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0px #888;
-}
-
-/* styling red vertical line */
-#paper::before {
-  content: '';
-  width: 2px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 40px;
-  background-color: rgba(255,0,0,0.6);
-}
-
-/* styling blue horizontal lines */
-#pattern {
-  height: 100%;
-  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
 }
