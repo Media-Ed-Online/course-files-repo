@@ -20,7 +20,7 @@ $(document).ready(function(index) {
 const observeTopicsList = document.querySelector("ul.topics li");
 
 const observer = new MutationObserver(function() {
-  $('li.section h2.sectionname span.sectionnumber').hide();
+  $('li.section h2.sectionname').hide();
 });
 
 observer.observe(observeTopicsList, {
