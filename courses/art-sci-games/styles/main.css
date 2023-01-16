@@ -10,6 +10,18 @@
  --text-light: #616988;
 }
 
+/* bootstrap color overwrites */
+.btn-warning {
+	color: #212529;
+	background-color: #ffa000;
+	border-color: #ffa000;
+}
+.btn-warning:hover {
+	color: #212529;
+	background-color: #e59000;
+	border-color: #e59000;
+}
+
 /* table of contents: */
 #page-mast h1 {
   font-family: 'Fredoka One', sans-serif;
