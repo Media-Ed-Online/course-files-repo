@@ -21,6 +21,16 @@
 	background-color: #e59000;
 	border-color: #e59000;
 }
+.btn-info {
+	color: #ffffff;
+	background-color: ##03a9f4;
+	border-color: ##03a9f4;
+}
+.btn-info:hover {
+	color: #ffffff;
+	background-color: #0298db;
+	border-color: #0298db;
+}
 
 /* table of contents: */
 #page-mast h1 {
