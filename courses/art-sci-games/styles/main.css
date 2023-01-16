@@ -20,3 +20,9 @@ nav#course-toc ol#chapters {
 nav#course-toc ol#chapters li span.sectionnumber {
   display: none;
 }
+
+/* edit look of quiz activity */
+li.snap-activity .modtype_quiz,  li.snap-activity .modtype_assign {
+  margin: 0 1%;
+  border-radius: 20px;
+}
