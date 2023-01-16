@@ -15,7 +15,7 @@
 #page-mast h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-color: #FF9A3D;
+  /*font-color: #FF9A3D;*/
 }
 nav#course-toc ol#chapters {
   list-style-type: none;
