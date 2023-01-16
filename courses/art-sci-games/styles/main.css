@@ -22,7 +22,7 @@ nav#course-toc ol#chapters li span.sectionnumber {
 }
 
 /* edit look of quiz activity */
-li.snap-activity .modtype_quiz,  li.snap-activity .modtype_assign {
+.section li.snap-activity.modtype_quiz {
   margin: 0 1%;
   border-radius: 20px;
 }
