@@ -16,6 +16,7 @@ $(document).ready(function(index) {
   // table of contents, separate sections:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
   // shorten labels:
+  $('li.modtype_label').find(".asset-wrapper .activityinstance div.snap-header-card").remove();
 });
 
 
@@ -24,12 +25,6 @@ const observeTopicsList = document.querySelector("ul.topics li");
 
 const observer = new MutationObserver(function() {
   $('li.section h2.sectionname').hide();
-
-  $(this).find(LAB).each(function(index) {
-    $(this).find(".label").css("padding", "0");
-    $(this).find(".asset-wrapper").css("padding", "0");
-    $(this).find(".asset-wrapper .activityinstance div.snap-header-card").remove();
-  });
 });
 
 observer.observe(observeTopicsList, {
