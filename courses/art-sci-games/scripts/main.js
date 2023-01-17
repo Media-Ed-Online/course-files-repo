@@ -17,7 +17,8 @@ $(document).ready(function(index) {
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
   // shorten labels:
   $(this).find(LAB).each(function(index) {
-    $(this).find(".snap-header-card").remove();
+    $(this).css("padding", "0");
+    $(this).find(".activityinstance .snap-header-card").remove();
   });
 });
 
