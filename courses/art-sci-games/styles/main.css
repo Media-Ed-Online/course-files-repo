@@ -49,10 +49,8 @@ nav#course-toc ol#chapters li span.sectionnumber {
 }
 
 /* fix bootstrap issues */
-@media (max-width: 767.98px) {
-  .nav-tabs, .nav-pills {
-    background-color: none;
-  }
+.nav-tabs, .nav-pills {
+  background-color: none;
 }
 
 /* edit look of quiz activity */
