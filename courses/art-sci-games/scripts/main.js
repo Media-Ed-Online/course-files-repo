@@ -9,11 +9,16 @@ var H5P = 'li.modtype_h5pactivity'
 var QUIZ = 'li.nodtype_quiz'
 var ASSN = 'li.modtype_assignment'
 var CHAT = 'li.modtype_hsuforum'
+var LAB = 'li.modtype_label'
 
 /* Main Components: */
 $(document).ready(function(index) {
   // table of contents, separate sections:
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
+  // shorten labels:
+  $(this).find(LAB).each(function(index) {
+    $(this).find(".snap-header-card").remove();
+  });
 });
 
 /* DOM Changes & Observations: */
