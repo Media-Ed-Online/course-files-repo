@@ -49,7 +49,7 @@ nav#course-toc ol#chapters li span.sectionnumber {
 }
 
 /* edit look of quiz activity */
-.section li.snap-activity.modtype_quiz {
+.section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_assign {
   margin: 0 1%;
   border-radius: 20px;
 }
