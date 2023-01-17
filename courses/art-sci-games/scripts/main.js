@@ -18,6 +18,7 @@ $(document).ready(function(index) {
   // shorten labels:
   $(this).find(LAB).each(function(index) {
     $(this).css("padding", "0");
+    $(this).find(".asset-wrapper").css("padding", "0");
     $(this).find(".activityinstance .snap-header-card").remove();
   });
 });
