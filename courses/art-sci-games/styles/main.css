@@ -49,8 +49,8 @@ nav#course-toc ol#chapters li span.sectionnumber {
 }
 
 /* fix bootstrap issues */
-.nav-tabs, .nav-pills {
-  @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+  .nav-tabs, .nav-pills {
     background-color: none;
   }
 }
