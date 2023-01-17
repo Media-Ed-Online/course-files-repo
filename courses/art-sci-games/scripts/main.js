@@ -17,11 +17,13 @@ $(document).ready(function(index) {
   $('nav#course-toc ol#chapters li:not(:contains("Exercise"))').css("border-top", "1px solid #dee2e6");
   // shorten labels:
   $(this).find(LAB).each(function(index) {
-    $(this).css("padding", "0");
+    $(this).find(".label").css("padding", "0");
     $(this).find(".asset-wrapper").css("padding", "0");
     $(this).find(".asset-wrapper .activityinstance div.snap-header-card").remove();
   });
 });
+
+$('li.modtype_label').find(".asset-wrapper .activityinstance div.snap-header-card").remove();
 
 /* DOM Changes & Observations: */
 const observeTopicsList = document.querySelector("ul.topics li");
