@@ -1,0 +1,69 @@
+/* --------------------
+| MAIN CSS OVERWRITES |
+-------------------- */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+/* variables: */
+:root {
+  --text: #707070;
+  --text-light: #616988;
+}
+
+/* bootstrap color overwrites */
+.btn-warning {
+  color: #ffffff;
+  background-color: #ffa000;
+  border-color: #ffa000;
+}
+
+.btn-warning:hover {
+  color: #ffffff;
+  background-color: #e59000;
+  border-color: #e59000;
+}
+
+.btn-info {
+  color: #ffffff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+
+.btn-info:hover {
+  color: #ffffff;
+  background-color: #0298db;
+  border-color: #0298db;
+}
+
+/* table of contents: */
+#page-mast h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav#course-toc ol#chapters {
+  list-style-type: none;
+}
+
+nav#course-toc ol#chapters li span.sectionnumber {
+  display: none;
+}
+
+/* topics */
+li.section h2.sectionname {
+  visibility: hidden;
+}
+li.section h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* fix bootstrap issues */
+.nav-tabs, .nav-pills {
+  background-color: none;
+}
+
+/* edit look of assignment activity */
+.section li.snap-activity.modtype_assign {
+  margin: 1% 0;
+  border-radius: 20px;
+  border-top-color: #34cccc;
+}
