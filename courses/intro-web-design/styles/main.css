@@ -32,7 +32,7 @@ li.section h2.sectionname {
 }
 li.section .summary h3, li.section .summary h4, li.section .summary h5 {
   font-family: 'Roboto Mono', monospace !important;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 /* edit look of assignment activity */
