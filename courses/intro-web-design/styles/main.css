@@ -2,7 +2,7 @@
 | MAIN CSS OVERWRITES |
 -------------------- */
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 /* variables: */
 :root {
@@ -52,8 +52,9 @@ nav#course-toc ol#chapters li span.sectionnumber {
 li.section h2.sectionname {
   visibility: hidden;
 }
-li.section h3 {
+li.section h3, li.section h4, li.section h5 {
   font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
 }
 
 /* fix bootstrap issues */
