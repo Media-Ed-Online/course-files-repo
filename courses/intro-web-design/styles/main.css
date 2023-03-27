@@ -23,7 +23,7 @@
   border-color: #e59000;
 }
 
-.btn-info {
+/*.btn-info {
   color: #ffffff;
   background-color: #03a9f4;
   border-color: #03a9f4;
@@ -33,15 +33,18 @@
   color: #ffffff;
   background-color: #0298db;
   border-color: #0298db;
-}
+}*/
 
 /* table of contents: */
 #page-mast h1 {
   font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
 }
 
 nav#course-toc ol#chapters {
   list-style-type: none;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
 }
 
 nav#course-toc ol#chapters li span.sectionnumber {
