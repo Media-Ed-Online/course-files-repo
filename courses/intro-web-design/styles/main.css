@@ -31,7 +31,7 @@ li.section h2.sectionname {
   visibility: hidden;
 }
 li.section .summary h3, li.section .summary h4, li.section .summary h5 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Mono', monospace !important;
   text-transform: uppercase;
 }
 
