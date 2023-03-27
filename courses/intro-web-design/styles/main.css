@@ -10,6 +10,38 @@
   --text-light: #616988;
 }
 
+/* table of contents: */
+#page-mast h1 {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
+nav#course-toc ol#chapters {
+  list-style-type: none;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
+nav#course-toc ol#chapters li span.sectionnumber {
+  display: none;
+}
+
+/* topics */
+li.section h2.sectionname {
+  visibility: hidden;
+}
+li.section.summary h3, li.section.summary h4, li.section.summary h5 {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+}
+
+/* edit look of assignment activity */
+.section li.snap-activity.modtype_assign {
+  margin: 1% 0;
+  border-radius: 20px;
+  border-top-color: #34cccc;
+}
+
 /* bootstrap color overwrites */
 .btn-warning {
   color: #ffffff;
@@ -35,39 +67,7 @@
   border-color: #0298db;
 }*/
 
-/* table of contents: */
-#page-mast h1 {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-}
-
-nav#course-toc ol#chapters {
-  list-style-type: none;
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-}
-
-nav#course-toc ol#chapters li span.sectionnumber {
-  display: none;
-}
-
-/* topics */
-li.section h2.sectionname {
-  visibility: hidden;
-}
-li.section h3, li.section h4, li.section h5 {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-}
-
 /* fix bootstrap issues */
 .nav-tabs, .nav-pills {
   background-color: none;
-}
-
-/* edit look of assignment activity */
-.section li.snap-activity.modtype_assign {
-  margin: 1% 0;
-  border-radius: 20px;
-  border-top-color: #34cccc;
 }
