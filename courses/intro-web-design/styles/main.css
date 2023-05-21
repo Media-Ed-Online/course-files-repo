@@ -2,7 +2,7 @@
 | MAIN CSS OVERWRITES |
 -------------------- */
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 /* variables: */
 :root {
@@ -12,13 +12,13 @@
 
 /* table of contents: */
 #page-mast h1 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Varela Round', sans-serif;
   text-transform: uppercase;
 }
 
 nav#course-toc ol#chapters {
   list-style-type: none;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Varela Round', sans-serif;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@ li.section h2.sectionname {
   visibility: hidden;
 }
 li.section .summary h3, li.section .summary h4, li.section .summary h5 {
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Varela Round', sans-serif !important;
   text-transform: uppercase !important;
 }
 
