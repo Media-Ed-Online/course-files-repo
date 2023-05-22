@@ -19,7 +19,7 @@
 nav#course-toc ol#chapters {
   list-style-type: none;
   font-family: 'Varela Round', sans-serif;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 nav#course-toc ol#chapters li span.sectionnumber {
