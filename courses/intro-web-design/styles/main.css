@@ -34,6 +34,10 @@ li.section .summary h3, li.section .summary h4, li.section .summary h5 {
   font-family: 'Varela Round', sans-serif !important;
   text-transform: uppercase !important;
 }
+.font-overwrite {
+  font-family: 'Varela Round', sans-serif !important;
+  text-transform: uppercase !important;
+}
 
 /* edit look of assignment activity */
 .section li.snap-activity.modtype_assign {
