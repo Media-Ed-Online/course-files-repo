@@ -39,13 +39,6 @@ li.section .summary h2, li.section .summary h3, li.section .summary h4, li.secti
   text-transform: uppercase !important;
 }
 
-/* edit look of assignment activity */
-.section li.snap-activity.modtype_assign {
-  margin: 1% 0;
-  border-radius: 20px;
-  border-top-color: #34cccc;
-}
-
 /* bootstrap color overwrites */
 .btn-warning {
   color: #ffffff;
