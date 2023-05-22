@@ -30,7 +30,7 @@ nav#course-toc ol#chapters li span.sectionnumber {
 li.section h2.sectionname {
   visibility: hidden;
 }
-li.section .summary h3, li.section .summary h4, li.section .summary h5 {
+li.section .summary h2, li.section .summary h3, li.section .summary h4, li.section .summary h5 {
   font-family: 'Varela Round', sans-serif !important;
   text-transform: uppercase !important;
 }
