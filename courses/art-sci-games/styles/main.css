@@ -36,19 +36,13 @@
 #page-mast h1 {
   font-family: 'Fredoka One', sans-serif;
 }
-nav#course-toc ol#chapters {
-  list-style-type: none;
-}
-nav#course-toc ol#chapters li span.sectionnumber {
-  display: none;
-}
 
 /* fix bootstrap issues */
 .nav-tabs, .nav-pills {
   background-color: none;
 }
 
-/* edit look of quiz activity */
+/* edit look of activity blocks */
 .section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_assign {
   margin: 0 1%;
   border-radius: 20px;
