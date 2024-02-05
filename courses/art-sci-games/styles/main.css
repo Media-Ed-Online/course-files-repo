@@ -139,7 +139,9 @@ blockquote {
 
 hr {
   background-color: transparent;
-  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/divider.gif') no-repeat top center;
+  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/divider.gif');
+  background-size: 100% 8px;
+  background-repeat: no-repeat;
   height: 20px;
   border: none !important;
 }
