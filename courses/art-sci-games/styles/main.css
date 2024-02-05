@@ -86,7 +86,7 @@
 /* overwrites */
 mark {
   background-color: transparent;
-  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games-fall2022/graphics/other/underline.png');
+  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/underline.png');
   background-size: 100% 8px;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -94,7 +94,7 @@ mark {
 
 dfn {
   background-color: transparent;
-  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games-fall2022/graphics/other/highlighter-yellow.png');
+  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/highlighter-yellow.png');
   background-size: 100% 100%;
   padding: 0.2em 0.4em;
   font-style: normal;
