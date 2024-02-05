@@ -66,7 +66,7 @@
   top: -15px;
   right: -15px;
 }
-.modal-float-right button>div {
+.modal-float-right button div:first-of-type {
   width: 46px;
   height: 46px;
   line-height: 30px;
