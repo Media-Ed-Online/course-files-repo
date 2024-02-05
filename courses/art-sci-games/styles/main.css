@@ -60,13 +60,13 @@
   border-radius: 15px;
   filter:drop-shadow(5px 5px 0px rgba(181,196,207,0.8))
 }
-.modal-float-right img:first-child button {
+.modal-float-right img:first-child + button {
   padding: 0;
   position: absolute;
   top: -15px;
   right: -15px;
 }
-.modal-float-right img:first-child button>div {
+.modal-float-right img:first-child + button > div {
   width: 46px;
   height: 46px;
   line-height: 30px;
