@@ -136,3 +136,10 @@ blockquote {
   border-left-color: #ff5671;
   background-color: rgba(255, 86, 113, 0.1);
 }
+
+hr {
+  background-color: transparent;
+  background-image: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/divider.gif') no-repeat top center;
+  height: 20px;
+  border: none !important;
+}
