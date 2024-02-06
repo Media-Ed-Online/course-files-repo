@@ -65,7 +65,6 @@
 .modal-float-right {
   position: relative;
   float: right;
-  margin-bottom: 20px;
 
   &>img:first-child {
     width: 250px;
@@ -101,7 +100,6 @@
 .modal-float-left {
   position: relative;
   float: left;
-  margin-bottom: 20px;
 
   &>img:first-child {
     width: 250px;
