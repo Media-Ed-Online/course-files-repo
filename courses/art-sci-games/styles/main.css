@@ -44,7 +44,7 @@
 #moodle-page h3, #moodle-page h4, #moodle-page h5, #moodle-page h6 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
-  font-size: 110%;
+  font-size: 125%;
 }
 
 /* fix bootstrap issues */
