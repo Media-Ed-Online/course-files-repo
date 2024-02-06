@@ -52,13 +52,17 @@
 }
 
 /* html page styling */
-.html-pages h3 {
-  font-family: "Fredoka One", sans-serif;
+.html-pages {
+  h2, h3 {
+    font-family: "Fredoka One", sans-serif;
+  }
 }
 
-.html-pages h4, h5, h6 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+.html-pages {
+  h4, h5, h6 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
 }
 
 /* modals */
