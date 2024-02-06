@@ -41,8 +41,6 @@
 }
 
 /* fonts and text */
-
-
 /* fix bootstrap issues */
 .nav-tabs, .nav-pills {
   background-color: none;
@@ -124,6 +122,31 @@
   padding: 30px 40px;
 }
 
+.side-note {
+  width: 300px;
+  float: left;
+  margin: 0 30px 10px 0;
+  position: relative;
+
+  & div {
+    padding: 10px 10px 20px 10px;
+    background: #E1E1E1;
+    border: 3px solid #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    filter: drop-shadow(5px 5px 0px rgba(181, 196, 207, 0.8));
+    font-size: 90%;
+    color: #000;
+  }
+
+  & img {
+    width: 100px;
+    height: 100px;
+    margin: -30px 0 0 0;
+    filter: drop-shadow(5px 5px 0px rgba(181, 196, 207, 0.8));
+  }
+}
+
 /* overwrites */
 mark {
   background-color: transparent;
@@ -145,12 +168,4 @@ dfn {
 blockquote {
   border-left-color: #ff5671;
   background-color: rgba(255, 86, 113, 0.1);
-}
-
-hr {
-  height: 50px;
-  background-color: transparent;
-  background: url('https://media-ed-online.github.io/course-files-repo/courses/art-sci-games/graphics/other/divider.gif') no-repeat;
-  background-position: center center;
-  background-size: 250px 50px;
 }
