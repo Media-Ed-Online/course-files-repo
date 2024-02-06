@@ -55,6 +55,7 @@
 .html-pages h3 {
   font-family: "Fredoka One", sans-serif;
 }
+
 .html-pages h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -90,6 +91,10 @@
       }
     }
   }
+
+  & p {
+    font-size: small;
+  }
 }
 
 .modal-float-left {
@@ -120,6 +125,10 @@
         filter: drop-shadow(5px 5px 0px rgba(181, 196, 207, 0.8));
       }
     }
+  }
+
+  & p {
+    font-size: small;
   }
 }
 
