@@ -43,9 +43,8 @@
 /* fonts and text */
 h3:not(nav), h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
+  font-size: 110%;
 }
 
 /* fix bootstrap issues */
