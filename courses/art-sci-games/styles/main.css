@@ -87,7 +87,7 @@
   position: absolute;
   top: 0;
   background: rgba(189, 255, 165, .8);
-  transition: display 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 
 .h5p-overlay-textbox {
