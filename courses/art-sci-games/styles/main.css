@@ -65,6 +65,28 @@
   }
 }
 
+/* h5p overlay */
+#h5p-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  background: rgba(189, 255, 165, .8);
+  transition: opacity 0.15s linear;
+}
+
+.h5p-overlay-textbox {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+}
+
 /* modals */
 .modal-float-right {
   position: relative;
