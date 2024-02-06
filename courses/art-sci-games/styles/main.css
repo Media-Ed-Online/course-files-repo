@@ -90,7 +90,7 @@
   position: absolute;
   top: 0;
   background: rgba(25, 191, 187, 0.8);
-  transition: visibility 0s, opacity 0.5s ease;
+  transition: visibility 0.5s ease;
 }
 
 .h5p-overlay-textbox {
@@ -102,9 +102,6 @@
   background: #fff;
   border-radius: 15px;
   padding: 15px;
-}
-.h5p-overlay-hidden {
-  display: none;
 }
 
 /* modals */
