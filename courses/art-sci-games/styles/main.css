@@ -89,7 +89,7 @@
   border-radius: 15px;
   position: absolute;
   top: 0;
-  background: rgba(189, 255, 165, .8);
+  background: rgba(26, 115, 217, 0.3);
   transition: opacity 0.15s linear;
 }
 
@@ -229,7 +229,7 @@ dfn {
 
 blockquote {
   border-left-color: #ea0f4d;
-  background-color: rgba(26, 115, 217, 0.1);
+  background-color: rgba(255, 102, 153, 0.1);
 
   & a {
     color: #1a73d9;
