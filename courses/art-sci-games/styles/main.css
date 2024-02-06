@@ -89,8 +89,9 @@
   border-radius: 15px;
   position: absolute;
   top: 0;
-  background: rgba(26, 115, 217, 0.3);
+  background: rgba(25, 191, 187, 0.5);
   transition: opacity 0.15s linear;
+  filter: blur(20px);
 }
 
 .h5p-overlay-textbox {
@@ -102,7 +103,6 @@
   background: #fff;
   border-radius: 15px;
   padding: 15px;
-  filter: blur(20px);
 }
 
 /* modals */
