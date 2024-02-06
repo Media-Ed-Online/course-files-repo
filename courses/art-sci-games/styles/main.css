@@ -68,7 +68,7 @@
 .html-pages h4 {
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 
   &::after {
     content: "";
