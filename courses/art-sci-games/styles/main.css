@@ -68,7 +68,7 @@
 .html-pages h4 {
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 
   &::after {
     content: "";
@@ -108,6 +108,7 @@
 .modal-float-right {
   position: relative;
   float: right;
+  margin-bottom: 50px;
 
   &>img:first-child {
     width: 250px;
@@ -127,7 +128,7 @@
         width: 46px;
         height: 46px;
         line-height: 30px;
-        background: #1a73d9;
+        background: #00ebed;
         border: 3px solid #000;
         border-radius: 100px;
         filter: drop-shadow(5px 5px 0px rgba(181, 196, 207, 0.8));
