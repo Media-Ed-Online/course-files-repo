@@ -62,20 +62,22 @@
   h4, h5, h6 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    box-sizing: border-box;
-    position: relative;
+  }
+}
 
-    &::after {
-      content: "";
-      width: 125px;
-      height: 3px;
-      background: #ff2e60;
-      border-radius: 5px;
-      position: absolute;
-      bottom: -30px;
-      left: -5px;
-      margin-bottom: 20px;
-    }
+.html-pages h3 {
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 160px;
+    height: 4px;
+    background: #ff2e60;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
   }
 }
 
