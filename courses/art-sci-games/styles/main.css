@@ -47,14 +47,6 @@
 }
 
 /* fonts and text */
-h1:not(#page-mast),h2:not(#page-mast), h3:not(#page-mast) {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
 h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
