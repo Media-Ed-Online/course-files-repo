@@ -2,8 +2,7 @@
 | MAIN CSS OVERWRITES |
 -------------------- */
 /* fonts */
-/*@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;700&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;700&display=swap');
 
 /* variables: */
 :root {
@@ -38,16 +37,11 @@
 
 /* table of contents: */
 #page-mast h1 {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-family: "Fredoka One", sans-serif;
 }
 
 /* fonts and text */
-h4, h5, h6 {
+h3:not(nav), h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -131,8 +125,8 @@ h4, h5, h6 {
 /* callouts */
 .point-of-interest {
   margin: 10px 10px 10px 30px;
-  background: #f2f2f2;
-  padding: 5px;
+  background: #fefefe;
+  padding: 30px;
 }
 
 /* overwrites */
