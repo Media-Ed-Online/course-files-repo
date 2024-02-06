@@ -65,9 +65,10 @@
   }
 }
 
-.html-pages h3 {
+.html-pages h4 {
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 20px;
 
   &::after {
     content: "";
