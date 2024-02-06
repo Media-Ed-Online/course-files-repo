@@ -229,7 +229,7 @@ dfn {
 
 blockquote {
   border-left-color: #ea0f4d;
-  background-color: rgba(255, 102, 153, 0.1);
+  background-color: rgba(26, 115, 217, 0.1);
 
   & a {
     color: #1a73d9;
