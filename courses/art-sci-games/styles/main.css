@@ -40,7 +40,6 @@
   font-family: "Fredoka One", sans-serif;
 }
 
-/* fonts and text */
 /* fix bootstrap issues */
 .nav-tabs, .nav-pills {
   background-color: none;
@@ -50,6 +49,15 @@
 .section li.snap-activity.modtype_quiz, .section li.snap-activity.modtype_assign {
   margin: 0 1%;
   border-radius: 20px;
+}
+
+/* html page styling */
+.html-pages h3 {
+  font-family: "Fredoka One", sans-serif;
+}
+.html-pages h4, h5, h6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 }
 
 /* modals */
