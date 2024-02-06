@@ -41,11 +41,7 @@
 }
 
 /* fonts and text */
-#moodle-page h3, #moodle-page h4, #moodle-page h5, #moodle-page h6 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500; 
-  font-size: 125%;
-}
+
 
 /* fix bootstrap issues */
 .nav-tabs, .nav-pills {
