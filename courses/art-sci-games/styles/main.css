@@ -90,7 +90,6 @@
   position: absolute;
   top: 0;
   background: rgba(25, 191, 187, 0.8);
-  transition: width 1s ease;
 }
 
 .h5p-overlay-textbox {
