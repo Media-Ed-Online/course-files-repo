@@ -51,6 +51,11 @@
   border-radius: 20px;
 }
 
+/* fix tiles */
+body.snap-resource-card .snap-resource-long div.contentafterlink .no-overflow {
+  overflow: show;
+}
+
 /* html page styling */
 .html-pages {
   h2, h3 {
