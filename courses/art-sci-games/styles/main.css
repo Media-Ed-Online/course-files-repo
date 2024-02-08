@@ -53,7 +53,7 @@
 
 /* fix tiles */
 body.snap-resource-card .snap-resource-long div.contentafterlink .no-overflow {
-  overflow: show !important;
+  overflow: visible !important;
 }
 body.snap-resource-card .snap-resource-long div.contentafterlink {
   padding: 1em;
