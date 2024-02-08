@@ -61,6 +61,9 @@ body.snap-resource-card .snap-resource-long div.contentafterlink {
   margin-top: .5em;
   background-color: #fff !important;
 }
+.section .activity.modtype_label.label {
+  border: none !important;
+}
 
 /* html page styling */
 .html-pages {
