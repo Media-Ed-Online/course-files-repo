@@ -249,4 +249,5 @@ dfn {
 blockquote {
   border-left-color: #ea0f4d;
   background-color: rgba(255, 102, 153, 0.1);
+  padding: 10px;
 }
