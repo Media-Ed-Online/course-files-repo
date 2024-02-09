@@ -156,7 +156,8 @@ body.snap-resource-card .snap-resource-long div.contentafterlink {
   }
 
   & p {
-    font-size: small;
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
 
@@ -192,7 +193,8 @@ body.snap-resource-card .snap-resource-long div.contentafterlink {
   }
 
   & p {
-    font-size: small;
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
 
